@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ninaportfolio/static/css/main.73a8ad68.chunk.css",
+    "main.js": "/ninaportfolio/static/js/main.c71cc369.chunk.js",
+    "main.js.map": "/ninaportfolio/static/js/main.c71cc369.chunk.js.map",
+    "runtime-main.js": "/ninaportfolio/static/js/runtime-main.611d2753.js",
+    "runtime-main.js.map": "/ninaportfolio/static/js/runtime-main.611d2753.js.map",
+    "static/js/2.0bab6b95.chunk.js": "/ninaportfolio/static/js/2.0bab6b95.chunk.js",
+    "static/js/2.0bab6b95.chunk.js.map": "/ninaportfolio/static/js/2.0bab6b95.chunk.js.map",
+    "static/js/3.8fbdf680.chunk.js": "/ninaportfolio/static/js/3.8fbdf680.chunk.js",
+    "static/js/3.8fbdf680.chunk.js.map": "/ninaportfolio/static/js/3.8fbdf680.chunk.js.map",
+    "index.html": "/ninaportfolio/index.html",
+    "static/css/main.73a8ad68.chunk.css.map": "/ninaportfolio/static/css/main.73a8ad68.chunk.css.map",
+    "static/js/2.0bab6b95.chunk.js.LICENSE.txt": "/ninaportfolio/static/js/2.0bab6b95.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ninaportfolio/static/media/workExp.f902f16c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611d2753.js",
+    "static/js/2.0bab6b95.chunk.js",
+    "static/css/main.73a8ad68.chunk.css",
+    "static/js/main.c71cc369.chunk.js"
+  ]
+}
