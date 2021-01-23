@@ -46,15 +46,13 @@ const Expertise = () => {
                                 <Card.Title className="web-dev-expertise-title"><CgWebsite size={25}/> Web Development</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <FaReact size={40}/>
+                                <FaReact size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <DiJavascript1 size={40}/>
+                                <DiJavascript1 size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <FaNodeJs size={40}/>
+                                <FaNodeJs size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <AiFillHtml5 size={40}/>
-                                &nbsp; &nbsp;
-                                <SiExpo size={40}/>
+                                <AiFillHtml5 size={40} color={'#f49ac2'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -86,11 +84,11 @@ const Expertise = () => {
                         <Card.Body>
                             <Card.Title className="db-expertise-title"><FiDatabase size={25}/> Database</Card.Title>
                             <Card.Subtitle>
-                                <SiNeo4J size={40}/>
+                                <SiNeo4J size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <SiMongodb size={40}/>
+                                <SiMongodb size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <AiOutlineConsoleSql size={40}/>
+                                <AiOutlineConsoleSql size={40} color={'#f49ac2'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <div className="db-expertise-content">
@@ -117,7 +115,7 @@ const Expertise = () => {
                         <Card.Body>
                             <Card.Title className="testing-expertise-title"><AiOutlineCheck size={25}/> Testing</Card.Title>
                             <Card.Subtitle>
-                                <SiPostman size={40}/>
+                                <SiPostman size={40} color={'#f49ac2'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <div className="testing-expertise-content">
@@ -154,7 +152,7 @@ const Expertise = () => {
                                     <RiComputerFill size={25}/> Programming</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <FaJava  size={40}/>
+                                <FaJava  size={40} color={'#f49ac2'}/>
                                 
                                 &nbsp; &nbsp;
                             </Card.Subtitle>
@@ -187,9 +185,9 @@ const Expertise = () => {
                                 <Card.Title className="os-expertise-title"><CgWebsite size={25}/> OS</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <AiFillWindows size={40}/>
+                                <AiFillWindows size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
-                                <AiFillAndroid size={40}/>
+                                <AiFillAndroid size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>

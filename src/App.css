@@ -164,7 +164,8 @@
 .web-dev-expertise-title, .db-expertise-title, .testing-expertise-title, .programming-expertise-title, .os-expertise-title{
   font-size:35px;
   font-weight: bolder;
-  font-family:'contentFont'
+  font-family:'contentFont';
+  color: black;
 }
 
 
