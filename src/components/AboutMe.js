@@ -17,7 +17,7 @@ render() {
                         <h1 className="about-me-content">
                             Masters in Software Engineering graduate
                             <br></br>
-                            A self-taught Full Stack Web Developer
+                            An aspiring Full Stack Web Developer
                             <br></br>
                             Experienced Software Tester
                         </h1>

@@ -3,10 +3,10 @@ import Fade from 'react-reveal/Fade'
 import Card from 'react-bootstrap/Card';
 import {CgWebsite} from 'react-icons/cg'
 import {FiDatabase} from 'react-icons/fi'
-import {SiNeo4J, SiMongodb, SiPostman} from 'react-icons/si'
+import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
-import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows} from 'react-icons/ai'
+import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows, AiFillAndroid} from 'react-icons/ai'
 import {BiHappyBeaming, HiOutlineEmojiHappy, RiComputerFill} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
@@ -53,6 +53,8 @@ const Expertise = () => {
                                 <FaNodeJs size={40}/>
                                 &nbsp; &nbsp;
                                 <AiFillHtml5 size={40}/>
+                                &nbsp; &nbsp;
+                                <SiExpo size={40}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -148,10 +150,12 @@ const Expertise = () => {
                         >
                         <Card.Body>
                             <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                <Card.Title className="programming-expertise-title"><RiComputerFill size={25}/> Programming</Card.Title>
+                                <Card.Title className="programming-expertise-title">
+                                    <RiComputerFill size={25}/> Programming</Card.Title>
                             </Link>
                             <Card.Subtitle>
                                 <FaJava  size={40}/>
+                                
                                 &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>
@@ -185,6 +189,8 @@ const Expertise = () => {
                             <Card.Subtitle>
                                 <AiFillWindows size={40}/>
                                 &nbsp; &nbsp;
+                                <AiFillAndroid size={40}/>
+                                &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -194,6 +200,7 @@ const Expertise = () => {
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
                                             <li><h3>Windows 7{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Windows 10{'   '}<BiHappyBeaming size={25}/></h3></li>
+                                            <li><h3>Android{'   '}<BiHappyBeaming size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   
                                         }

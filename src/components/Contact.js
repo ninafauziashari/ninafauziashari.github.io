@@ -3,6 +3,7 @@ import resumeData from '../resumeData';
 import Fade from 'react-reveal/Fade'
 import emailjs from 'emailjs-com';
 import {AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub} from 'react-icons/all'
+import { Link } from 'react-scroll'
 
 
 const Contact = () => {
@@ -77,7 +78,9 @@ const Contact = () => {
                         <textarea name="message" style={{height:"200px"}} onChange={message => setSubject(message)} required={true}/>
                         <br></br>
                         <br></br>
-                        <input type="submit" value="SUBMIT" style={{padding:"10px", backgroundColor:"white", fontFamily:"bodyFont", letterSpacing:"1px", fontWeight:"bolder", borderRadius:"5px"}}/>
+                        
+                            <input type="submit" value="SUBMIT" style={{padding:"10px", backgroundColor:"white", fontFamily:"bodyFont", letterSpacing:"1px", fontWeight:"bolder", borderRadius:"5px"}}/>
+                        
                     </form>
                     </div>
                 </div>
