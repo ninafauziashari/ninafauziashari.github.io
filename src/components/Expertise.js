@@ -43,7 +43,7 @@ const Expertise = () => {
                         >
                         <Card.Body>
                             <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                <Card.Title className="web-dev-expertise-title"><CgWebsite size={25}/> Web Development</Card.Title>
+                                <Card.Title className="web-dev-expertise-title">Web Development</Card.Title>
                             </Link>
                             <Card.Subtitle>
                                 <FaReact size={40} color={'#f49ac2'}/>
@@ -82,7 +82,7 @@ const Expertise = () => {
                     onMouseEnter={() => setDBHover(true)}
                     onMouseLeave={() => setDBHover(false)}>
                         <Card.Body>
-                            <Card.Title className="db-expertise-title"><FiDatabase size={25}/> Database</Card.Title>
+                            <Card.Title className="db-expertise-title"> Database</Card.Title>
                             <Card.Subtitle>
                                 <SiNeo4J size={40} color={'#f49ac2'}/>
                                 &nbsp; &nbsp;
@@ -113,7 +113,7 @@ const Expertise = () => {
                     onMouseEnter={() => setTestHover(true)}
                     onMouseLeave={() => setTestHover(false)}>
                         <Card.Body>
-                            <Card.Title className="testing-expertise-title"><AiOutlineCheck size={25}/> Testing</Card.Title>
+                            <Card.Title className="testing-expertise-title">Testing</Card.Title>
                             <Card.Subtitle>
                                 <SiPostman size={40} color={'#f49ac2'}/>
                             </Card.Subtitle>
@@ -149,7 +149,7 @@ const Expertise = () => {
                         <Card.Body>
                             <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
                                 <Card.Title className="programming-expertise-title">
-                                    <RiComputerFill size={25}/> Programming</Card.Title>
+                                    Programming</Card.Title>
                             </Link>
                             <Card.Subtitle>
                                 <FaJava  size={40} color={'#f49ac2'}/>
@@ -182,7 +182,7 @@ const Expertise = () => {
                         >
                         <Card.Body>
                             <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                <Card.Title className="os-expertise-title"><CgWebsite size={25}/> OS</Card.Title>
+                                <Card.Title className="os-expertise-title"> OS</Card.Title>
                             </Link>
                             <Card.Subtitle>
                                 <AiFillWindows size={40} color={'#f49ac2'}/>
