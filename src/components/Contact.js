@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import resumeData from '../resumeData';
 import Fade from 'react-reveal/Fade'
 import emailjs from 'emailjs-com';
-import {AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub} from 'react-icons/all'
+import {AiOutlineLinkedin, AiOutlineInstagram, AiOutlineGithub, AiOutlineMail} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
 
@@ -38,17 +38,14 @@ const Contact = () => {
             </div>
             <div className="contact-content" style={{backgroundColor:"#fffcec"}}>
                 <div style={{justifyContent:"center"}}>
+                <p style={{fontWeight:"bold"}} ><AiOutlineMail size={20}/>&nbsp;:&nbsp; {resumeData.email}</p>
                     <ul className="social-media-contact">
                         <li className="socmedIcon">
                             <a href="https://www.linkedin.com/in/nurul-ahmad-fauzi-74004b134/" target="_blank" rel="noopener noreferrer">
                                 <AiOutlineLinkedin size={40} color='black'/>
                             </a>
                         </li>
-                        <li className="socmedIcon">
-                            <a href="https://www.instagram.com/ninafauziashari/?hl=en" target="_blank" rel="noopener noreferrer">
-                                < AiOutlineInstagram size={40} color='black'/>
-                            </a>
-                        </li>
+                       &nbsp;
                         <li className="socmedIcon">
                             <a href="https://github.com/ninafauziashari" target="_blank" rel="noopener noreferrer">
                                 <AiOutlineGithub size={40} color='black'/>

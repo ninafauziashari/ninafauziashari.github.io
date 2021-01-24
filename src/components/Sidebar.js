@@ -35,24 +35,21 @@ const Sidebar = ({}) => {
                     <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.linkedinId} </li>*/}
 
                     <p className="nav-text-biodata" style={{fontWeight:"bold"}} ><AiOutlineMail/>: {resumeData.email}</p>
-
+                    {/* 
                     <ul className="social-media" style={{flexDirection:'row', marginTop:"-15px", marginBottom:"5px"}}>
                         <li className="socmedIcon">
                             <a href="https://www.linkedin.com/in/nurul-ahmad-fauzi-74004b134/" target="_blank" rel="noopener noreferrer">
                                 <AiOutlineLinkedin size={40} color='white'/>
                             </a>
                         </li>
-                        <li className="socmedIcon">
-                            <a href="https://www.instagram.com/ninafauziashari/?hl=en" target="_blank" rel="noopener noreferrer">
-                                < AiOutlineInstagram size={40} color='white'/>
-                            </a>
-                        </li>
+                        
                         <li className="socmedIcon">
                             <a href="https://github.com/ninafauziashari" target="_blank" rel="noopener noreferrer">
                                 < AiOutlineGithub size={40} color='white'/>
                             </a>
                         </li>
                     </ul> 
+                    */}
 
                    <Link activeClass="active" to="home" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
                       <li className="nav-text"><a href="#home" data-nav-section="home" style={{height:"35px"}}>Home</a></li>
