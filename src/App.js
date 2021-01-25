@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ReactGA from 'react-ga'
+import {createBrowserHistory} from 'history' 
 import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 import Resume from './components/Resume';
@@ -16,8 +18,15 @@ import './App.css';
 
 class App extends Component{
   render(){
+    const history = createBrowserHistory();
+
+    history.listen(location =>{
+      ReactGA.initialize('G-4BL0ENGN6B');
+      ReactGA.set({page: location.pathname}); //update the user's current page
+      ReactGA.pageview(location.pathname); //Record a pageview for the given page
+    })
     return(
-      <Router>
+      <Router history={history}>
         <Sidebar/>
         <Switch>
           <div className="App">
