@@ -21,7 +21,7 @@ class App extends Component{
     const history = createBrowserHistory();
 
     history.listen(location =>{
-      ReactGA.initialize('G-4BL0ENGN6B');
+      ReactGA.initialize('UA-188012026-1');
       ReactGA.set({page: location.pathname}); //update the user's current page
       ReactGA.pageview(location.pathname); //Record a pageview for the given page
     })
