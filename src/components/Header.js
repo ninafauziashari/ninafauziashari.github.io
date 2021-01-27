@@ -11,7 +11,7 @@ render() {
             <div>
             <Fade bottom>
                 <div className="app-header-title">
-                    <h1 >Hi, you can call me {resumeData.shortName}.</h1>
+                    <h1>Hi, you can call me {resumeData.shortName}.</h1>
                 </div>
                 </Fade>
             </div>  

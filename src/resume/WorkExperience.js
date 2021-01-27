@@ -5,10 +5,10 @@ import {AiOutlinePlus, AiFillCloseCircle} from 'react-icons/ai'
 import Fade from 'react-reveal'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-scroll'
+import work_logo from '../images/work_logo.png'
 
 const WorkExperience = ({}) => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isQAOpen, setQAOpen] = useState(false)
 
     const showOpen = () => setIsOpen(!isOpen)
 
@@ -32,7 +32,7 @@ const WorkExperience = ({}) => {
                     <div className="work-experience-background">
                         
                         <div className="work-experience-content" style={{padding: "10px"}}>
-                        <div className="biodata-close-icon" style={{color:"white"}}>
+                        <div className="biodata-close-icon" style={{color:"black"}}>
                             <Link to="education" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
                                 <AiFillCloseCircle size={38}/>
                             </Link>
@@ -43,11 +43,16 @@ const WorkExperience = ({}) => {
                                     <div className="row item" style={{opacity:"0.95"}}>
                                         <Fade bottom>
                                             <div className="work-exp-card">
-                                                <h2 className="work-exp-title">{item.position}</h2>
-                                                    <div className="work-exp-content">
-                                                        <h3 style={{fontSize:"22px"}}>Company: {item.companyName}</h3>
-                                                        <h3 style={{fontSize:"22px", marginTop:"-20px"}}>Location: {item.location}</h3>
-                                                        <h3 style={{fontSize:"22px", marginTop:"-20px"}}>Duration: {item.startDate} - {item.endDate}</h3>
+                                                <div className='work-exp-inner-card'>
+                                                    <img src={work_logo} alt="Logo" width={150} height={110} style={{paddingTop:"25px", paddingRight:"40px", alignItems:"center"}}/>
+                                                    <p className="work-exp-title">{item.position}</p>
+                                                    <div className="work-exp-date">
+                                                        <p>{item.startDate} - {item.endDate}</p>
+                                                    </div>
+         
+                                                </div>
+                                                
+                                                   {/**?  <div className="work-exp-content">*/}
                                                         <Card className="work-exp-content-inner">
                                                             <Card.Text style={{justifyContent:"left", flex:"1"}}>
                                                             <h4>{item.intro}</h4> 
@@ -92,13 +97,13 @@ const WorkExperience = ({}) => {
                                                         
                                                     </div> 
                                                 
-                                            </div>
+                                           {/** </div>*/}
                                         </Fade>
                                     </div>    
                                 )
                             })
                         }
-                         <p style={{fontSize:"10px"}}>Background image credit: <a href="https://oranginspo.tumblr.com/"> here</a></p>  
+                        
                         </div> 
                         
                     </div>    

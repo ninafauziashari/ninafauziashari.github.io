@@ -43,6 +43,7 @@ const EducationalBackground = ({}) => {
                                        
                                             <h3>{item.degree}, {item.university} </h3>
                                             <h4>({item.startDate} - {item.endDate}) </h4>
+                                            <p>Grade: {item.grade}</p>
                                             <div className="edu-exp-content-inner" style={{textAlign:"justify", fontSize:"15px"}}>
                                                 <p><b>Modules include:</b></p>
                                                 {

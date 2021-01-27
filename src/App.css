@@ -48,24 +48,28 @@
 }
 
 .app-header {
-  height:200%;
+  height:100%;
   background-image: url("./images/bground.jpg");
   background-position:bottom;
   background-attachment:fixed;
   background-size: cover;
   background-repeat:repeat-y;
   display: flex;
-
   flex-direction: column;
+  justify-content: center;
   color: rgb(255, 255, 255);
-  padding:60px;
-  padding-bottom: 160px;
+  /*padding-bottom: 160px;*/
+  padding: 0 0 35%;
+  padding-top: 50px;
+  
 
 }
 
 .app-header-title{
   font-family:'headerFont';
-  font-size:calc(45px + 2vmin);
+  font-size:calc(50px + 1vmin);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -407,7 +411,7 @@
 }
 
 .work-experience-background{
-  background-color: #040084;
+  background-color: black;
   background-position:fixed;
   padding:15px;
   justify-content: flex-start;
@@ -419,8 +423,10 @@
 }
 
 .work-experience-content{
-  background-image: url('images/workExp.jpg');
-  /*background-color: #f7761a;*/
+  background-image: none;
+ /* background-image: url('images/workE.jpg');
+  /*background: linear-gradient(to bottom, #ffffff 0%, #dedede 100%);*/
+  background-color:#fff8d3;
   background-position:center;
   background-repeat:repeat;
 }
@@ -738,11 +744,43 @@ span {
   }
 
   .work-exp-card{
-    background-color:#FECC98 ;
-    border-radius:5px;
+    /*background-color:#FECC98 ;*/
+    background-color:white;
     margin: 30px;
     padding: 10px; 
-    opacity: 0.9;
+    opacity: 0.95;
+    
+    
+  }
+
+  .work-exp-inner-card{
+    flex:1;
+    flex-direction: row;
+    display:flex;
+    margin-bottom: -10px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    border-bottom: 2px solid rgb(170, 170, 170);
+
+  }
+
+  .work-exp-date{
+    align-items:center;
+    flex:1;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding-right: 30px;
+  }
+
+  .work-exp-title{
+    font-family: 'headerFont';
+    /*color: #0141CF;*/
+    color: black;
+    font-size: 55px;
+    align-items: center;
+    justify-content: center;
   }
 
   .work-exp-content{
@@ -772,12 +810,7 @@ span {
     text-align: justify;
   }
 
-  .work-exp-title{
-    font-family: 'headerFont';
-    color: #0141CF;
-    font-size: 45px;
-    justify-content: center;
-  }
+ 
 
   .contact{
     font-family: 'headerFont';

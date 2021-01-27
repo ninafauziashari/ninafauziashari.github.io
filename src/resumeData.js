@@ -28,36 +28,37 @@ let resumeData = {
     [
         {
         "university":"University of Nothampton",
+        "grade" : "First Class (expected)",
         "degree":"MSc Computing (Software Engineering)",
         "modules": 
                 [{
                     "id":0,
-                    "name":"Database (Neo4j - NoSQL Cypher Query Language) - (A)",
+                    "name":"Database (Neo4j - NoSQL Cypher Query Language)",
 
                  },
                  {
                     "id":1,
-                    "name":"Visual Object Software (Java, including JavaFX) - (B)",
+                    "name":"Visual Object Software (Java, including JavaFX)",
 
                  },
                  {
                     "id":2,
-                    "name":"Modern Computer Architecture (VHDL) - (A-)",
+                    "name":"Modern Computer Architecture (VHDL)",
 
                  },
                  {
                     "id":3,
-                    "name":"Intelligent Systems (Java + Prolog, including Data Structure) - (A)",
+                    "name":"Intelligent Systems (Java + Prolog, including Data Structure)",
 
                  },
                  {
                     "id":4,
-                    "name":"Computer Security (Assignment involve researching and applying SSL/TLS) - (B+)",
+                    "name":"Computer Security (Assignment involve researching and applying SSL/TLS)",
 
                  },
                  {
                     "id":5,
-                    "name":"Software Engineering (including Agile Methodology. Project: Creating a home alarm system by using JavaFX and applying Agile Methodology) - (A-)",
+                    "name":"Software Engineering (including Agile Methodology. Project: Creating a home alarm system by using JavaFX and applying Agile Methodology)",
 
                  }],
         "startDate":"October 2019",
@@ -66,6 +67,7 @@ let resumeData = {
         },
         {
             "university":"Sheffield Hallam University",
+            "grade" : "2:2",
             "degree":"BEng Software Engineering",
             "modules": 
                 [{ 
@@ -98,6 +100,7 @@ let resumeData = {
         },
         {
             "university":"Universiti Teknologi MARA (UiTM), Malaysia",
+            "grade" : "3.01",
             "degree":"Diploma in Computer Science",
             "modules": 
                 [{
