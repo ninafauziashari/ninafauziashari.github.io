@@ -21,7 +21,7 @@ const Project = () => {
             </Fade>
             </div>
             <div className="project-content">
-                <ul style={{listStyle:"none"}}>
+                <ul style={{listStyle:"none", padding:"10px"}}>
                     <li>
                     <Fade bottom>
                         <div className="project-title-1">

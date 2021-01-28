@@ -92,6 +92,7 @@
   padding-top:2px;
   padding:80px;
   letter-spacing: 2.0px;
+  transition: 1000ms;
 }
 
 .expertise{
@@ -396,11 +397,13 @@
 
 .education-inner-content{
   padding: 2px;
-  margin:8px;
-  margin-right: 18%;
-  margin-left: 18%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:-50px;
+  margin-right:-50px;
   color:black;
   font-family: 'bodyFont';
+  opacity: 0.95;
   background-color:#f7cfda;
   border-radius:5px;
   position: relative;
@@ -408,6 +411,7 @@
   font-size: 20px;
   justify-content: center;
   align-items: center;
+
 }
 
 .work-experience-background{
@@ -418,16 +422,15 @@
   /*padding-left:-200px;*/
   margin:7px;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 5px;
 
 }
 
 .work-experience-content{
   background-image: none;
- /* background-image: url('images/workE.jpg');
+ background-image: url('images/workE.jpg');
   /*background: linear-gradient(to bottom, #ffffff 0%, #dedede 100%);*/
-  background-color:#fff8d3;
-  background-position:center;
+  background-position:fixed;
   background-repeat:repeat;
 }
 
@@ -438,7 +441,7 @@
   margin-bottom: -50px;
   color: white;
   font-size: 50px;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items:center;  
   letter-spacing: 1.5px; 
@@ -454,8 +457,6 @@
   font-weight: 'bolder';
   padding:30px;
   margin:0px;  
-  align-items: center;
-  
 }
 
 
@@ -677,9 +678,6 @@ span {
   flex-wrap: wrap;
   position: relative;
   margin-bottom:30px;
-  
-
-  /*color:#e7cb2a;*/
 }
 
 
@@ -700,7 +698,7 @@ span {
 }
 
   .project-icon {
-    color:#b784a7;
+    color:#9c718f;
     flex:1px;
     position: relative;
     flex-direction: row;
@@ -709,37 +707,30 @@ span {
     align-items: center;
     flex-wrap: wrap;
     transition: 850ms;
-    animation:ease-in-out ;
     padding-top:10px;
   }
 
   .project-inner-content{
-    background-color: #f8f8ff;
+    /*background-color: #d8bfd8;*/
+    background-color: #d8bfd8;
     color:black;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: justify;
     position: relative;
     padding:25px;
-    margin:25px;
-    margin-left:50px;
-    margin-right:50px;
     font-family: 'bodyFont';
-    flex:1px;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+ 
   }
 
   .project-explanation{
-    background-color: #d8bfd8;
+    background-color:  #f8f8ff;
     padding:20px;
     border-radius: 5px;
+    margin:0px;
     margin-top:30px;
     font-size: 16px;
     word-spacing: 1.5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     font-weight: bold;
   }
 
@@ -748,8 +739,7 @@ span {
     background-color:white;
     margin: 30px;
     padding: 10px; 
-    opacity: 0.95;
-    
+    opacity: 0.95;  
     
   }
 
@@ -758,6 +748,7 @@ span {
     flex-direction: row;
     display:flex;
     margin-bottom: -10px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     padding-left: 30px;
     border-bottom: 2px solid rgb(170, 170, 170);
@@ -770,15 +761,16 @@ span {
     flex-direction: row;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-right: 30px;
   }
 
   .work-exp-title{
-    font-family: 'headerFont';
+    font-family: 'bodyFont';
+    font-weight: bold;
     /*color: #0141CF;*/
     color: black;
-    font-size: 55px;
+    font-size: 40px;
     align-items: center;
     justify-content: center;
   }
@@ -800,6 +792,7 @@ span {
     border-radius: 5px;
     position: relative;
     flex-wrap: wrap;
+    flex:1;
     margin:20px;
     padding:20px;
     padding-top: 3px;
@@ -814,6 +807,7 @@ span {
 
   .contact{
     font-family: 'headerFont';
+    
     margin-bottom: -50px;
     font-size: 50px;
     display: flex;

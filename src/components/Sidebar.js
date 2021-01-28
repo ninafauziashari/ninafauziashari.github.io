@@ -1,9 +1,7 @@
 import React, { Component, useState} from 'react'
 import {AiOutlineLinkedin, AiOutlineInstagram, AiOutlineCloseCircle, AiOutlineMail, AiOutlineGithub} from 'react-icons/ai'
-import {BiArrowFromBottom} from 'react-icons/bi'
-import {BsBoxArrowUp} from 'react-icons/bs'
-import {CgScrollV} from 'react-icons/cg'
 import {FaHamburger} from 'react-icons/fa'
+import {IoIosArrowDropupCircle} from 'react-icons/io'
 import resumeData from '../resumeData';
 import { Link } from 'react-scroll'
 
@@ -32,9 +30,9 @@ const Sidebar = ({}) => {
                     
                     {/* <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.email}</li>
                     <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.contactNo} </li>
-                    <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.linkedinId} </li>*/}
+                    <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.linkedinId} </li>
 
-                    <p className="nav-text-biodata" style={{fontWeight:"bold"}} ><AiOutlineMail/>: {resumeData.email}</p>
+                    <p className="nav-text-biodata" style={{fontWeight:"bold"}} ><AiOutlineMail/>: {resumeData.email}</p>*/}
                     {/* 
                     <ul className="social-media" style={{flexDirection:'row', marginTop:"-15px", marginBottom:"5px"}}>
                         <li className="socmedIcon">
@@ -77,7 +75,7 @@ const Sidebar = ({}) => {
             </nav>
             <div className='navbar'>
               <Link className="scroll-to-top" activeClass="active" to="home" spy={true} smooth={true} duration={1250}>
-                    <BiArrowFromBottom size={37} style={{cursor:"pointer"}}/>
+                    <IoIosArrowDropupCircle size={37} style={{cursor:"pointer"}}/>
               </Link>
             </div>
         </aside>

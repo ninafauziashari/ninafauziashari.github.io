@@ -32,7 +32,7 @@ const WorkExperience = ({}) => {
                     <div className="work-experience-background">
                         
                         <div className="work-experience-content" style={{padding: "10px"}}>
-                        <div className="biodata-close-icon" style={{color:"black"}}>
+                        <div className="biodata-close-icon" style={{color:"white"}}>
                             <Link to="education" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
                                 <AiFillCloseCircle size={38}/>
                             </Link>
@@ -44,10 +44,10 @@ const WorkExperience = ({}) => {
                                         <Fade bottom>
                                             <div className="work-exp-card">
                                                 <div className='work-exp-inner-card'>
-                                                    <img src={work_logo} alt="Logo" width={150} height={110} style={{paddingTop:"25px", paddingRight:"40px", alignItems:"center"}}/>
-                                                    <p className="work-exp-title">{item.position}</p>
+                                                    <img src={work_logo} alt="Logo" width={170} height={110} style={{paddingTop:"25px", paddingRight:"40px", alignItems:"center"}}/>
+                                                    <p className="work-exp-title">{item.companyName}</p>
                                                     <div className="work-exp-date">
-                                                        <p>{item.startDate} - {item.endDate}</p>
+                                                        <h2>{item.position}</h2>
                                                     </div>
          
                                                 </div>
@@ -90,6 +90,9 @@ const WorkExperience = ({}) => {
                                                             })
  
                                                             }
+                                                            </div>
+                                                            <div className="work-exp-date">
+                                                                <p><b>{item.startDate}-{item.endDate}</b></p>
                                                             </div>
                                                             </Card.Text>
                                                             

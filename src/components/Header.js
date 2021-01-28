@@ -12,6 +12,7 @@ render() {
             <Fade bottom>
                 <div className="app-header-title">
                     <h1>Hi, you can call me {resumeData.shortName}.</h1>
+                    <p style={{fontSize:"40px"}}>Please to meet you! :D</p>
                 </div>
                 </Fade>
             </div>  
