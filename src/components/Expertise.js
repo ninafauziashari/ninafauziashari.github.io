@@ -26,9 +26,9 @@ const Expertise = () => {
                 <div className="expertise-subtitle">
                     <p>Psst...hover over the cards</p>
                     <div className="expertise-subtitle-emoji">
-                        <BiHappyBeaming size={30}/> - Good
+                        <BiHappyBeaming size={30}/> - Very Good 
                         &nbsp;&nbsp;
-                        <HiOutlineEmojiHappy size={30}/> - Moderate
+                        <HiOutlineEmojiHappy size={30}/> - Good
                      </div>
                 </div>
             </Fade>
@@ -59,7 +59,7 @@ const Expertise = () => {
                                 <div className="web-dev-expertise-content" >
                                     {inWebDevHover && 
                                     <Fade clear>
-                                        <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
+                                        <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start", alignContent:"center"}}>
                                             <li><h3>JavaScript{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>HTML5{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React Native{'   '}<BiHappyBeaming size={25}/></h3></li>

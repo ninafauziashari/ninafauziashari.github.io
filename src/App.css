@@ -176,8 +176,12 @@
 
 .web-dev-expertise-content, .db-expertise-content, .testing-expertise-content, .programming-expertise-content, .os-expertise-content{
   background-color: pink;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top:9px;
+  flex:1;
+  flex-direction: row;
+  display: flex;
+  text-align:justify;
 }
 
 .card-text{
@@ -187,7 +191,7 @@
   font-family: 'bodyFont';
   color:black;
   list-style:none;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card-text-interest{
