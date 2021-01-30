@@ -511,14 +511,13 @@
   background-repeat: repeat-y;
   background-position: fixed;
   background-size: 100%; 
-  width: 270px;
+  width: 250px;
   height: 100vh;
   display: flex;
   padding: 25px;
   padding-left: -2px;
-  justify-content:left;
   position: fixed;
-  top: -3px;
+  top: 0px;
   left: -100%;
   transition: 850ms;
   z-index: 4;
@@ -537,16 +536,14 @@
 
 .nav-text {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   padding: 4px;
-  padding-left: 0px;
   position: relative;
   list-style: none;
-  font-family: 'headerFont';
-  font-size: 23px;
-  margin-top: -7px;
-  margin-left: -30px;
+  font-family: 'contentFont';
+  font-size: 20px;
+  margin-top: -4px;
+  margin-left: 0px;
   font-weight: bolder;
 }
 
@@ -554,28 +551,20 @@
   text-decoration: none;
   background-color: white;
   color: black;
-  width: 60%;
-  height: 95%;
+  width: 70%;
+  padding:5px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 27px;
-  padding-bottom:6.5px;
+  align-items: center; 
+  padding-left: 15px;
   position: relative;
   border-radius: 4px;
   margin-top: 2px;
-  font-weight: bolder;
 }
 
 .nav-text a:hover {
   background-color:#998a36;
   color:white;
-  transition:850ms;
-}
-
-.nav-text-header:hover{
-  color:white;
-  transition:850ms;
+  transition:700ms;
 }
 
 .nav-text-biodata {
@@ -599,25 +588,30 @@
   font-weight: bolder;
 }
 
-.nav-text-header {
-  color:#e2c20e;
+/*.nav-text-header {
+  color:white;
   text-shadow: -1px 2px 5px rgba(15, 14, 14, 0.75);
-  opacity: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  padding-left: 0px;
+  padding-right: 10px;
+  margin-bottom: 30px;
   position: relative;
   list-style: none;
   letter-spacing: 0.2px;
   height: 100px;
   font-family: 'headerFont';
-  font-size: 49px;
+  font-size: 45px;
   margin-top: -20px;
-  margin-bottom: 35px;
+  /*margin-bottom: 100px;
   font-weight: bolder;
+}*/
+
+.nav-text-header:hover{
+  color:white;
+  transition:850ms;
 }
+
 
 .nav-menu-items {
   width: 100%;
@@ -698,6 +692,7 @@ span {
 }
 
   .project-icon {
+    /*color:#d8d8bf*/
     color:#9c718f;
     flex:1px;
     position: relative;
@@ -724,7 +719,7 @@ span {
   }
 
   .project-explanation{
-    background-color:  #f8f8ff;
+    background-color:  #F4F4F1;
     padding:20px;
     border-radius: 5px;
     margin:0px;

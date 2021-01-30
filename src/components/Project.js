@@ -25,12 +25,12 @@ const Project = () => {
                     <li>
                     <Fade bottom>
                         <div className="project-title-1">
-                            <h2>Hill Recommendation System Application (Master's dissertation topic, 2020)
+                            <h3 style={{fontFamily:'bodyFont', color:"#E6DECC"}}>Hill Recommendation System Application (Master's dissertation topic, 2020)
                                 &nbsp;&nbsp;
                                 <Link to="project-content" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                    <AiFillPlusSquare onClick={()=> setIsOpen(!isOpen)} style={{cursor:"pointer", alignItems:"baseline"}}size={40} color="white"/>
+                                    <AiFillPlusSquare onClick={()=> setIsOpen(!isOpen)} style={{cursor:"pointer", alignContent:"center"}}size={40} color="white"/>
                                 </Link>
-                            </h2>
+                            </h3>
                         </div>
                         <div className ="scroll-here-project">
                             {isOpen &&
@@ -72,12 +72,12 @@ const Project = () => {
                     <li>
                         <Fade bottom>
                         <div className="project-title-2">
-                            <h2>Mobile Application for Hotel Room Attendant (Degree's dissertation topic, 2019)
+                            <h3 style={{fontFamily:'bodyFont', color:"#E6DECC"}}>Mobile Application for Hotel Room Attendant (Degree's dissertation topic, 2019)
                             &nbsp;&nbsp;
                             <Link to="project-title-2" activeClass="active" spy={true} smooth={true} duration={1250}>
                                 <AiFillPlusSquare onClick={()=> setDIsOpen(!isDOpen)} style={{cursor:"pointer", alignItems:"baseline"}}size={40} color="white"/>
                             </Link>
-                            </h2>
+                            </h3>
                         </div>
                         <div className="scroll-here-project-2">
                             {isDOpen &&

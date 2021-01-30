@@ -14,10 +14,10 @@ const Sidebar = ({}) => {
         <aside className="aside">
             <div className='navbar'>
               <Link to='#' className='menu-bars-open' style={{cursor:"pointer"}}>
-                  <FaHamburger onClick={showSidebar} size={45} color="#f4c430"/>
+                  <FaHamburger onClick={showSidebar} size={35} color="#f4c430"/>
               </Link>
             </div>
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'} onClick={showSidebar}  size={40} color="white">
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'} onClick={showSidebar}  size={35} color="white">
                 <ul className='nav-menu-items' >
                     <li className='navbar-toggle'>
                         <Link to='#' className='menu-bars-close' style={{cursor:"pointer"}}>
@@ -26,7 +26,7 @@ const Sidebar = ({}) => {
                     </li>
                     <br></br>
                     <br></br>
-                    <h1 className="nav-text-header">{resumeData.fullName}</h1>
+                  
                     
                     {/* <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.email}</li>
                     <li className="nav-text-biodata" style={{fontWeight:"bold"}}>{resumeData.contactNo} </li>
@@ -49,24 +49,24 @@ const Sidebar = ({}) => {
                     </ul> 
                     */}
 
-                   <Link activeClass="active" to="home" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
+                   <Link activeClass="active" to="home" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
                       <li className="nav-text"><a href="#home" data-nav-section="home" style={{height:"35px"}}>Home</a></li>
                     </Link>
 
-                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
                       <li className="nav-text"><a href="#about" data-nav-section="about" style={{height:"35px"}}>Intro...</a></li>
                     </Link>
 
-                    <Link activeClass="active" to="expertise" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
+                    <Link activeClass="active" to="expertise" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
                       <li className="nav-text"><a href="#expertise" data-nav-section="expertise" style={{height:"35px"}}>Expertise</a></li>
                     </Link>
-                    <Link activeClass="active" to="resume" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
+                    <Link activeClass="active" to="resume" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
                        <li className="nav-text"><a href="#resume" data-nav-section="resume" style={{height:"35px"}}>Resume</a></li>
                     </Link>
-                    <Link activeClass="active" to="project" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
-                       <li className="nav-text"><a href="#project" data-nav-section="project" style={{height:"35px"}}>Project</a></li>
+                    <Link activeClass="active" to="project" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
+                       <li className="nav-text"><a href="#project" data-nav-section="project" style={{height:"35px"}}>Project(s)</a></li>
                     </Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1250} onClick={showSidebar}>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1400} onClick={showSidebar}>
                        <li className="nav-text"><a href="#contact" data-nav-section="contact" style={{height:"35px"}}>Contact</a></li>
                     </Link>
 
@@ -74,8 +74,8 @@ const Sidebar = ({}) => {
                 </ul> 
             </nav>
             <div className='navbar'>
-              <Link className="scroll-to-top" activeClass="active" to="home" spy={true} smooth={true} duration={1250}>
-                    <IoIosArrowDropupCircle size={37} style={{cursor:"pointer"}}/>
+              <Link className="scroll-to-top" activeClass="active" to="home" spy={true} smooth={true} duration={1400}>
+                    <IoIosArrowDropupCircle size={35} style={{cursor:"pointer"}}/>
               </Link>
             </div>
         </aside>
