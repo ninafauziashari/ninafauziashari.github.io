@@ -229,6 +229,55 @@
  /* padding-bottom: 2px;*/
 }
 
+.resume-logo{
+  animation: resume-logo-spin-close  0.5s linear;
+
+}
+
+.resume-logo-click {
+  animation: resume-logo-spin-open  0.5s linear;
+}
+
+
+.expertise-logo{
+  animation: unset
+}
+
+.expertise-logo-hover{
+  animation: exp-logo-spin-open infinite 4s linear;
+}
+
+
+@keyframes resume-logo-spin-open {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes resume-logo-spin-close {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+
+@keyframes exp-logo-spin-open{
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
 .resume-content{
   background-color:#b1b1b1;
   margin-top: -40px;

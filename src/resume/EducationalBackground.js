@@ -8,7 +8,10 @@ import Card from 'react-bootstrap/Card'
 
 const EducationalBackground = ({}) => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClick, setIsClik] = useState(false)
+
     const showOpen = () => setIsOpen(!isOpen)
+    const showClick = () => setIsClik(!isClick)
 
     return (
         <section id="education">
@@ -19,8 +22,8 @@ const EducationalBackground = ({}) => {
                     <h2>Educational Background</h2>
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
-                    <Link to="scroll-here-eduBack" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                        <AiOutlinePlus size={30}/>
+                    <Link to="education" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
+                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
                     </Link>
                     </div> 
                 </div>
@@ -29,9 +32,9 @@ const EducationalBackground = ({}) => {
                     isOpen &&
                     <div className="resumeBackground">
                         <div className="education-content" style={{paddingLeft:"100px", paddingRight:"100px"}}>
-                        <div className="biodata-close-icon" style={{color:"white", marginRight:"-4rem"}}>
+                        <div className="biodata-close-icon" style={{color:"white", marginRight:"-5rem"}}>
                             <Link to="biodata" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={38}/>
+                                <AiFillCloseCircle size={30}/>
                             </Link>
                         </div>
                         {

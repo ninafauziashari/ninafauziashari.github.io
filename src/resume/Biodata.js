@@ -11,8 +11,10 @@ import Card from 'react-bootstrap/Card';
 
 const Biodata = ({}) => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClick, setIsClik] = useState(false)
 
     const showOpen = () => setIsOpen(!isOpen)
+    const showClick = () => setIsClik(!isClick)
 
     return (
         <section id="biodata">
@@ -22,21 +24,20 @@ const Biodata = ({}) => {
                     &nbsp;&nbsp;&nbsp;
                     <h2>Biodata</h2>
                     &nbsp; &nbsp;
-                    <div className="scroll-down-resume">
+                    <div className="scroll-down-resume" >
                     <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
-                        <AiOutlinePlus size={30}/>
-                        
+                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>   
                     </Link>
                     </div> 
                 </div>
                 <div className="scroll-here-biodata">
                 {
-                    isOpen &&
+                    isOpen && 
                     <div className="resumeBackground">
                         <div className="biodata-content">
                         <div className="biodata-close-icon">
                                 <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                    <AiFillCloseCircle size={38} style={{color:"red"}}/>
+                                    <AiFillCloseCircle size={30} style={{color:"red"}}/>
                                 </Link>
                             </div> 
                             <div className="biodata-inner-content">

@@ -9,8 +9,11 @@ import { Link } from 'react-scroll'
 
 
 const Project = () => {
-    const [isOpen, setIsOpen] = useState(false)
     const [isDOpen, setDIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+    const [isClick, setIsClik] = useState(false)
+
+    const showClick = () => setIsClik(!isClick)
 
     /*let resumeData = this.props.resumeData;*/
     return (

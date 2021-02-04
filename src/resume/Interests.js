@@ -10,12 +10,15 @@ import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
 
 const Interests = ({}) => {
-    const [isOpen, setIsOpen] = useState(false)
     const [isReadingHover, setReadingHover] = useState(false);
     const [isProgramHover, setProgramHover] = useState(false);
     const [isHikeHover, setHikeHover] = useState(false);
 
+    const [isOpen, setIsOpen] = useState(false)
+    const [isClick, setIsClik] = useState(false)
+
     const showOpen = () => setIsOpen(!isOpen)
+    const showClick = () => setIsClik(!isClick)
 
     return (
         <section id="interests">
@@ -26,8 +29,8 @@ const Interests = ({}) => {
                     <h2>Interests | Hobby</h2>
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
-                        <Link to="scroll-here-interests" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                            <AiOutlinePlus size={30}/>
+                        <Link to="interests" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
+                            <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
                         </Link>
                     </div> 
                 </div>
@@ -37,9 +40,9 @@ const Interests = ({}) => {
                     <div className="resumeBackground">
                     <div className="interests-content nine columns main-col">
                         <div className="outer-interest" >
-                        <div className="biodata-close-icon" style={{color:"white", marginRight:"1rem"}}>
+                        <div className="biodata-close-icon" style={{color:"white", marginRight:"0rem"}}>
                             <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={38}/>
+                                <AiFillCloseCircle size={30}/>
                             </Link>
                         </div>
                             <div className="inner-interest" >

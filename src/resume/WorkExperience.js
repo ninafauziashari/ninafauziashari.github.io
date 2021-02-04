@@ -9,8 +9,10 @@ import work_logo from '../images/work_logo.png'
 
 const WorkExperience = ({}) => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClick, setIsClik] = useState(false)
 
     const showOpen = () => setIsOpen(!isOpen)
+    const showClick = () => setIsClik(!isClick)
 
     return (
         <section id="work-experience">
@@ -22,7 +24,7 @@ const WorkExperience = ({}) => {
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
                     <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                        <AiOutlinePlus size={30}/>
+                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
                     </Link>
                     </div> 
                 </div>
@@ -34,7 +36,7 @@ const WorkExperience = ({}) => {
                         <div className="work-experience-content" style={{padding: "10px"}}>
                         <div className="biodata-close-icon" style={{color:"white"}}>
                             <Link to="education" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={38}/>
+                                <AiFillCloseCircle size={30} />
                             </Link>
                         </div>
                         {

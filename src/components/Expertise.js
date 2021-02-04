@@ -46,13 +46,13 @@ const Expertise = () => {
                                 <Card.Title className="web-dev-expertise-title">Web Development</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <FaReact size={40} color={'#f49ac2'}/>
+                                <FaReact size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <DiJavascript1 size={40} color={'#f49ac2'}/>
+                                <DiJavascript1 size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <FaNodeJs size={40} color={'#f49ac2'}/>
+                                <FaNodeJs size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <AiFillHtml5 size={40} color={'#f49ac2'}/>
+                                <AiFillHtml5 size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -84,11 +84,11 @@ const Expertise = () => {
                         <Card.Body>
                             <Card.Title className="db-expertise-title"> Database</Card.Title>
                             <Card.Subtitle>
-                                <SiNeo4J size={40} color={'#f49ac2'}/>
+                                <SiNeo4J size={40} color={'#f49ac2'} className={inDBHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <SiMongodb size={40} color={'#f49ac2'}/>
+                                <SiMongodb size={40} color={'#f49ac2'} className={inDBHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <AiOutlineConsoleSql size={40} color={'#f49ac2'}/>
+                                <AiOutlineConsoleSql size={40} color={'#f49ac2'} className={inDBHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <div className="db-expertise-content">
@@ -115,7 +115,7 @@ const Expertise = () => {
                         <Card.Body>
                             <Card.Title className="testing-expertise-title">Testing</Card.Title>
                             <Card.Subtitle>
-                                <SiPostman size={40} color={'#f49ac2'}/>
+                                <SiPostman size={40} color={'#f49ac2'} className={inTestHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <div className="testing-expertise-content">
@@ -152,8 +152,7 @@ const Expertise = () => {
                                     Programming</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <FaJava  size={40} color={'#f49ac2'}/>
-                                
+                                <FaJava  size={40} color={'#f49ac2'} className={inProgrammingDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>
@@ -185,9 +184,9 @@ const Expertise = () => {
                                 <Card.Title className="os-expertise-title"> OS</Card.Title>
                             </Link>
                             <Card.Subtitle>
-                                <AiFillWindows size={40} color={'#f49ac2'}/>
+                                <AiFillWindows size={40} color={'#f49ac2'} className={inOSHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <AiFillAndroid size={40} color={'#f49ac2'}/>
+                                <AiFillAndroid size={40} color={'#f49ac2'} className={inOSHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>
