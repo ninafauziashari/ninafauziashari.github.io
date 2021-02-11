@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import resumeData from '../resumeData';
 import {MdWork} from 'react-icons/md'
-import {AiOutlinePlus, AiFillCloseCircle} from 'react-icons/ai'
+import {AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import Fade from 'react-reveal'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-scroll'
@@ -23,8 +23,16 @@ const WorkExperience = ({}) => {
                     <h2>Work Experience</h2>
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
-                    <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
+                    <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
+                        {
+                            isClick
+                            ? 
+                                <Link to="education" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
+                                    <AiOutlineMinus size={30} onClick={showClick} className="resume-logo"/>
+                                </Link> 
+                            : 
+                                 <AiOutlinePlus size={30} onClick={showClick} className="resume-logo-click"/>           
+                        }
                     </Link>
                     </div> 
                 </div>
@@ -34,11 +42,7 @@ const WorkExperience = ({}) => {
                     <div className="work-experience-background">
                         
                         <div className="work-experience-content" style={{padding: "10px"}}>
-                        <div className="biodata-close-icon" style={{color:"white"}}>
-                            <Link to="education" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={30} />
-                            </Link>
-                        </div>
+                       
                         {
                             resumeData.work.map((item)=>{
                                 return(

@@ -1,6 +1,6 @@
 import React, {useState, Component} from 'react';
 import resumeData from '../resumeData';
-import { AiOutlinePlus, AiFillCloseCircle} from 'react-icons/ai'
+import { AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import {IoSchoolOutline} from 'react-icons/all'
 import { Link } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
@@ -22,8 +22,16 @@ const EducationalBackground = ({}) => {
                     <h2>Educational Background</h2>
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
-                    <Link to="education" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
+                    <Link to="education" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen} >
+                        {
+                            isClick
+                            ? 
+                                <Link to="biodata" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
+                                    <AiOutlineMinus size={30} onClick={showClick} className="resume-logo"/>
+                                </Link> 
+                            : 
+                                 <AiOutlinePlus size={30} onClick={showClick} className="resume-logo-click"/>           
+                        }
                     </Link>
                     </div> 
                 </div>
@@ -32,11 +40,6 @@ const EducationalBackground = ({}) => {
                     isOpen &&
                     <div className="resumeBackground">
                         <div className="education-content" style={{paddingLeft:"100px", paddingRight:"100px"}}>
-                        <div className="biodata-close-icon" style={{color:"white", marginRight:"-5rem"}}>
-                            <Link to="biodata" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={30}/>
-                            </Link>
-                        </div>
                         {
                             resumeData.education.map((item)=>{
                                 return(

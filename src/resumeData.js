@@ -119,6 +119,8 @@ let resumeData = {
             "dissertationTopic":" Built an online food ordering website (HTML, CSS, JavaScript and PHP) and built a cashiering system for university’s cafeteria (in C++)"
         }
     ],
+
+
     "mastersProject":" For my Master’s dissertation, I created a prototype app that recommends users hills (in the UK) to hike using Expo's React Native framework as the frontend and Neo4j as the database. Node.js and Express.js were used as the server and Postman was used for API testing. One of the benefits of Neo4j graph database is that it also acts as a Recommendation Engine. I thought it would be interesting to display the outcome through React Native. It is even more interesting that such combination has never been done before (at least no study, article or research paper was found regarding this)",
     "mastersGrade" : "A-",
     "degreeProject":"For my Bachelor’s dissertation, I created a prototype app using React Native and MongoDB Stitch for hotel room attendants. The app helps the room attendants to change the status of room from uncleaned to cleaned, report maintenance issue and report guest’s left items. After all the rooms are completed, they will then send their reports to the head of room attendant. It is a very simple app as it was the first time ever was exposed to React Native",

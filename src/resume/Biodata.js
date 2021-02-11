@@ -1,6 +1,6 @@
 import React, {useState, Component} from 'react';
 import resumeData from '../resumeData';
-import { AiOutlinePlus, AiOutlineHome, AiFillCloseCircle} from 'react-icons/ai'
+import { AiOutlinePlus, AiOutlineHome, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import {BsFillPlusCircleFill} from 'react-icons/bs'
 import {FaCat, FaBabyCarriage} from 'react-icons/fa'
 import {FiMoon} from 'react-icons/fi'
@@ -11,10 +11,10 @@ import Card from 'react-bootstrap/Card';
 
 const Biodata = ({}) => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isClick, setIsClik] = useState(false)
+    const [isClick, setIsClick] = useState(false)
 
     const showOpen = () => setIsOpen(!isOpen)
-    const showClick = () => setIsClik(!isClick)
+    const showClick = () => setIsClick(!isClick)
 
     return (
         <section id="biodata">
@@ -26,7 +26,15 @@ const Biodata = ({}) => {
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume" >
                     <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
-                        <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>   
+                        {
+                            isClick
+                            ? 
+                                <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
+                                    <AiOutlineMinus size={30} onClick={showClick} className="resume-logo"/>
+                                </Link> 
+                            : 
+                                 <AiOutlinePlus size={30} onClick={showClick} className="resume-logo-click"/>           
+                        }
                     </Link>
                     </div> 
                 </div>
@@ -35,11 +43,6 @@ const Biodata = ({}) => {
                     isOpen && 
                     <div className="resumeBackground">
                         <div className="biodata-content">
-                        <div className="biodata-close-icon">
-                                <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                    <AiFillCloseCircle size={30} style={{color:"red"}}/>
-                                </Link>
-                            </div> 
                             <div className="biodata-inner-content">
                            
                                 <div className="biodata-list">                  

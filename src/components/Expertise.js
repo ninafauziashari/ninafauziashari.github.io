@@ -64,9 +64,7 @@ const Expertise = () => {
                                             <li><h3>HTML5{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React Native{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React.js{'   '}<BiHappyBeaming size={25}/></h3></li>
-                                            <li><h3>Node.js{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
-                                            <li><h3>Express.js{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
-
+                                            <li><h3>Node.js (+ Express.js){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   
                                         }
@@ -161,7 +159,7 @@ const Expertise = () => {
                                     {inProgrammingDevHover && 
                                     <Fade clear>
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
-                                            <li><h3>Java{'   '}<BiHappyBeaming size={25}/></h3></li>
+                                            <li><h3>Java 8{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>JavaFX{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>VHDL{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       

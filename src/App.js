@@ -26,7 +26,7 @@ class App extends Component{
       ReactGA.pageview(location.pathname); //Record a pageview for the given page
     })
     return(
-      <Router history={history}>
+      <Router history={history}> 
         <Sidebar/>
         <Switch>
           <div className="App">

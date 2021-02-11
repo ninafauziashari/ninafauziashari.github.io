@@ -1,7 +1,7 @@
 import React, {useState, Component} from 'react';
 import resumeData from '../resumeData';
 import Card from 'react-bootstrap/Card';
-import {AiOutlinePlus, AiFillCloseCircle} from 'react-icons/ai'
+import {AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import {ImBooks} from 'react-icons/im'
 import {IoBookSharp, SiCoffeescript, FiMusic, FaHiking, FaMountain} from 'react-icons/all'
 import {GiBookmarklet, GiDoubleDragon, GiCrossedSwords, GiTrail} from 'react-icons/gi'
@@ -29,9 +29,17 @@ const Interests = ({}) => {
                     <h2>Interests | Hobby</h2>
                     &nbsp; &nbsp;
                     <div className="scroll-down-resume">
-                        <Link to="interests" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showOpen}>
-                            <AiOutlinePlus className={isClick ? 'resume-logo-click ': 'resume-logo'} size={30} onClick={showClick}/>
-                        </Link>
+                    <Link to="interests" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
+                        {
+                            isClick
+                            ? 
+                                <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
+                                    <AiOutlineMinus size={30} onClick={showClick} className="resume-logo"/>
+                                </Link> 
+                            : 
+                                 <AiOutlinePlus size={30} onClick={showClick} className="resume-logo-click"/>           
+                        }
+                    </Link>
                     </div> 
                 </div>
                 <div className="scroll-here-interests">
@@ -40,11 +48,6 @@ const Interests = ({}) => {
                     <div className="resumeBackground">
                     <div className="interests-content nine columns main-col">
                         <div className="outer-interest" >
-                        <div className="biodata-close-icon" style={{color:"white", marginRight:"0rem"}}>
-                            <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showOpen}>
-                                <AiFillCloseCircle size={30}/>
-                            </Link>
-                        </div>
                             <div className="inner-interest" >
                                 <Card className="interest-reading">
                                         <Card.Text 

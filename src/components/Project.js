@@ -4,16 +4,22 @@ import Fade from 'react-reveal/Fade'
 import Card from 'react-bootstrap/Card';
 import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
-import {AiFillPlusSquare, AiOutlinePlus, AiFillCloseCircle} from 'react-icons/ai'
+import {AiFillPlusSquare, AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
 
 const Project = () => {
-    const [isDOpen, setDIsOpen] = useState(false)
-    const [isOpen, setIsOpen] = useState(false)
-    const [isClick, setIsClik] = useState(false)
+    const [isDOpen, setIsDOpen] = useState(false)
+    const [isDClick, setIsDClick] = useState(false)
 
-    const showClick = () => setIsClik(!isClick)
+    const [isMOpen, setIsMOpen] = useState(false) 
+    const [isMClick, setIsMClick] = useState(false)
+
+    const showMClick = () => setIsMClick(!isMClick)
+    const showMOpen = () => setIsMOpen(!isMOpen)
+
+    const showDClick = () => setIsDClick(!isDClick)
+    const showDOpen = () => setIsDOpen(!isDOpen)
 
     /*let resumeData = this.props.resumeData;*/
     return (
@@ -23,20 +29,30 @@ const Project = () => {
                 <h1>Project(s)</h1>
             </Fade>
             </div>
-            <div className="project-content">
-                <ul style={{listStyle:"none", padding:"10px"}}>
+            <div className="project-content" style={{padding:"20px"}}>
+                <ul style={{listStyle:"none",justifyContent:"center", marginLeft:"-20px"}}>
                     <li>
                     <Fade bottom>
                         <div className="project-title-1">
-                            <h3 style={{fontFamily:'bodyFont', color:"#E6DECC"}}>Hill Recommendation System Application (Master's dissertation topic, 2020)
-                                &nbsp;&nbsp;
-                                <Link to="project-content" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                    <AiFillPlusSquare onClick={()=> setIsOpen(!isOpen)} style={{cursor:"pointer", alignContent:"center"}}size={40} color="white"/>
-                                </Link>
-                            </h3>
+                            <h3 style={{fontFamily:'bodyFont', color:"#563561", textAlign:"justify"}}>Hill Recommendation System Application (Masters Dissertation Topic, 2020)</h3>
+                                
+                                <div className="scroll-down-project">
+                                    <Link to="project-content" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showMOpen}>
+                                    {
+                                        isMClick
+                                        ? 
+                                            <Link to="project-content" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showMOpen}>
+                                                <AiOutlineMinus size={30} onClick={showMClick} className="project-logo"/>
+                                            </Link> 
+                                        : 
+                                            <AiOutlinePlus size={30} onClick={showMClick} className="project-logo-click"/>           
+                                    }
+                                    </Link>
+                                </div> 
+                            
                         </div>
                         <div className ="scroll-here-project">
-                            {isOpen &&
+                            {isMOpen &&
                                 <div className="project-inner-content">                                   
                                     <Fade bottom>
                                     <div className="project-icon">
@@ -75,12 +91,21 @@ const Project = () => {
                     <li>
                         <Fade bottom>
                         <div className="project-title-2">
-                            <h3 style={{fontFamily:'bodyFont', color:"#E6DECC"}}>Mobile Application for Hotel Room Attendant (Degree's dissertation topic, 2019)
+                            <h3 style={{fontFamily:'bodyFont', color:"#563561", textAlign:"justify"}}>Mobile Application for Hotel Room Attendant (Degree's Dissertation Topic, 2019)</h3>
                             &nbsp;&nbsp;
-                            <Link to="project-title-2" activeClass="active" spy={true} smooth={true} duration={1250}>
-                                <AiFillPlusSquare onClick={()=> setDIsOpen(!isDOpen)} style={{cursor:"pointer", alignItems:"baseline"}}size={40} color="white"/>
-                            </Link>
-                            </h3>
+                            <div className="scroll-down-project">
+                                <Link to="project-title-2" activeClass="active" spy={true} smooth={true} duration={1250} onClick={showDOpen}>
+                                {
+                                        isDClick
+                                        ? 
+                                            <Link to="project-title-2" activeClass="active" spy={true} smooth={true} duration={1000} onClick={showDOpen}>
+                                                <AiOutlineMinus size={30} onClick={showDClick} className="project-logo"/>
+                                            </Link> 
+                                        : 
+                                            <AiOutlinePlus size={30} onClick={showDClick} className="project-logo-click"/>           
+                                }
+                                </Link>
+                            </div>  
                         </div>
                         <div className="scroll-here-project-2">
                             {isDOpen &&
