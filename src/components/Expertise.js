@@ -7,7 +7,7 @@ import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
 import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows, AiFillAndroid} from 'react-icons/ai'
-import {BiHappyBeaming, HiOutlineEmojiHappy, RiComputerFill} from 'react-icons/all'
+import {BiHappyBeaming, HiOutlineEmojiHappy, RiComputerFill, SiCss3} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
 
@@ -24,9 +24,9 @@ const Expertise = () => {
             <Fade bottom>
                 <h1>Expertise</h1>
                 <div className="expertise-subtitle">
-                    <p>Psst...hover over the cards</p>
+                    <p>Psst...hover/tap over the cards</p>
                     <div className="expertise-subtitle-emoji">
-                        <BiHappyBeaming size={30}/> - Very Good 
+                        <BiHappyBeaming size={30}/> - Very good
                         &nbsp;&nbsp;
                         <HiOutlineEmojiHappy size={30}/> - Good
                      </div>
@@ -53,6 +53,8 @@ const Expertise = () => {
                                 <FaNodeJs size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
                                 <AiFillHtml5 size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
+                                <SiCss3 size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -62,6 +64,7 @@ const Expertise = () => {
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start", alignContent:"center"}}>
                                             <li><h3>JavaScript{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>HTML5{'   '}<BiHappyBeaming size={25}/></h3></li>
+                                            <li><h3>CSS3{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React Native{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React.js{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Node.js (+ Express.js){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
@@ -120,9 +123,9 @@ const Expertise = () => {
                                {inTestHover && 
                                <Fade clear>
                                    <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start" }}>
-                                       <li><h3>Postman{'   '}<BiHappyBeaming size={25}/></h3></li>
-                                       <li><h3>Selenium{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
-                                       <li><h3>Gherkin{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                       <li><h3>Postman (API Testing){'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Selenium (Automation){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                       <li><h3>Gherkin (BDD Testing) {'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                    </ul>
                                         
                                  </Fade>   
@@ -159,7 +162,7 @@ const Expertise = () => {
                                     {inProgrammingDevHover && 
                                     <Fade clear>
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
-                                            <li><h3>Java 8{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>Java 8{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>JavaFX{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>VHDL{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       

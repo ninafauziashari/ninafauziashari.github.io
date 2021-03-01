@@ -63,7 +63,7 @@ let resumeData = {
                  }],
         "startDate":"October 2019",
         "endDate":"November 2020",
-        "dissertationTopic":"Implementing mobile application that recommends hills for users to hike. (using Expo’s React Native (incl. React Hooks) + Node.js + Neo4j), Test method: Usability testing (also API Testing using Postman), Methodology used: Agile-Waterfall Hybrid. - (A-)"
+        "dissertationTopic":"Implementing mobile application that recommends hills for users to hike. (using Expo’s React Native (incl. React Hooks) + Node.js + Neo4j), Test method: Usability testing (also API Testing using Postman), Methodology used: Agile-Waterfall Hybrid."
         },
         {
             "university":"Sheffield Hallam University",
@@ -133,7 +133,7 @@ let resumeData = {
         "startDate":"July 2017",
         "endDate":"August 2018",
         "workDesc": "",
-        "intro":"Based in Chesterfield, this is a part of my university’s Year 3 Work Placement. Responsibilities include:",
+        "intro":"Based in Chesterfield UK, this is a part of my university’s Year 3 Work Placement. Responsibilities include:",
         "responsibilities":
             [{
                 "one": "Writing test scripts, test cases and test plans for a software using Excel. ",
