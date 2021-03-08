@@ -67,7 +67,7 @@ const EducationalBackground = ({}) => {
                                                 
                                                 </div>
                                             </div>
-                                        <div></div>
+
                                             
                                         </div>
                                     </Card>

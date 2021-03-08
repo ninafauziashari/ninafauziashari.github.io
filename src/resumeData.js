@@ -152,6 +152,21 @@ let resumeData = {
             }]
     }],
 
+    "references":
+    [{
+        "ref_name": "Thomas Shuttleworth",
+        "occupation": "QA Team Lead",
+        "email":"thomas.shuttleworth@vesuvius.com",
+        "company": "Vesuvius UK Ltd"
+    },
+    {
+        "ref_name": "Dr. Suraj Ajit",
+        "occupation": "Software Engineering Lecturer",
+        "email":"suraj.ajit@northampton.ac.uk",
+        "company": "University of Northampton"
+
+    }],
+
     "skillsDescription":"Your skills here",
     "skills":[
         {

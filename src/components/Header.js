@@ -13,7 +13,7 @@ const Header = ()=>{
                             <h1 style={{marginBottom:"0px"}}>Hi, you can call me {resumeData.shortName}...</h1>
                             <Link activeClass="active" to="about" spy={true} smooth={true} duration={1400}>
                                 <button className="app-header-button">
-                                    AND I AM...
+                                    AND I'M A...
                                 </button>
                             </Link>
                         </div>
