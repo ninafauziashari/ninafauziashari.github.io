@@ -50,7 +50,7 @@ const WorkExperience = ({}) => {
                                         <Fade bottom>
                                             <div className="work-exp-card">
                                                 <div className='work-exp-inner-card'>
-                                                    <img src={work_logo} alt="Logo" width={170} height={110} style={{paddingTop:"25px", paddingRight:"40px", alignItems:"center"}}/>
+                                                    
                                                     <p className="work-exp-title">{item.companyName}</p>
                                                     <div className="work-exp-date">
                                                         <h2>{item.position}</h2>

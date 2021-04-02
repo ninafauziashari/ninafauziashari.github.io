@@ -126,7 +126,33 @@ let resumeData = {
     "degreeProject":"For my Bachelor’s dissertation, I created a prototype app using React Native and MongoDB Stitch for hotel room attendants. The app helps the room attendants to change the status of room from uncleaned to cleaned, report maintenance issue and report guest’s left items. After all the rooms are completed, they will then send their reports to the head of room attendant. It is a very simple app as it was the first time ever was exposed to React Native",
     "degreeGrade" : "2:3",
     "work":
-    [{
+    [
+        {
+            "position": "Junior Full Stack Developer",
+            "companyName":"OnCloud Technologies Sdn Bhd",
+            "location":"Kuala Lumpur, Malaysia",
+            "startDate":"March 2021",
+            "endDate":"Present",
+            "workDesc": "",
+            "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Responsibilities include:",
+            "responsibilities":
+                [{
+                    "one": "<TBA>",
+                    "two": "<TBA>",
+                    "three": "<TBA>",
+                    "four" : "<TBA>",
+                    "five" : "<TBA>",
+                    "six" : "<TBA>"
+                }],
+            "intro_learn":"Through my experiences in this company, I have learned to:",
+            "learned":
+                [{
+                    "l1":"<TBA>",
+                    "l2":"<TBA>",
+                    "l3":"<TBA>"
+                }]
+        }, 
+        {
         "position": "Quality Assurance Intern",
         "companyName":"Vesuvius UK Ltd",
         "location":"Chesterfield, UK",

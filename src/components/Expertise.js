@@ -6,7 +6,7 @@ import {FiDatabase} from 'react-icons/fi'
 import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
-import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows, AiFillAndroid} from 'react-icons/ai'
+import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
 import {BiHappyBeaming, HiOutlineEmojiHappy, RiComputerFill, SiCss3} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
@@ -189,6 +189,8 @@ const Expertise = () => {
                                 &nbsp; &nbsp;
                                 <AiFillAndroid size={40} color={'#f49ac2'} className={inOSHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
+                                <AiFillApple size={40} color={'#f49ac2'} className={inOSHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -199,6 +201,7 @@ const Expertise = () => {
                                             <li><h3>Windows 7{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Windows 10{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Android{'   '}<BiHappyBeaming size={25}/></h3></li>
+                                            <li><h3>macOS{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   
                                         }
