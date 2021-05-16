@@ -134,13 +134,13 @@ let resumeData = {
             "startDate":"March 2021",
             "endDate":"Present",
             "workDesc": "",
-            "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Responsibilities include:",
+            "intro":"Responsibilities include:",
             "responsibilities":
                 [{
-                    "one": "<TBA>",
-                    "two": "<TBA>",
-                    "three": "<TBA>",
-                    "four" : "<TBA>",
+                    "one": "",
+                    "two": "Develop new features for the company applications using MERN stack and Java.",
+                    "three": "Develop effective RESTful API for frontend or third party app integration",
+                    "four" : "Bug fixes based on customer support tickets.",
                     "five" : "<TBA>",
                     "six" : "<TBA>"
                 }],
