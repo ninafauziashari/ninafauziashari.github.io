@@ -1,13 +1,11 @@
 import React, { Component, useState } from 'react';
 import Fade from 'react-reveal/Fade'
 import Card from 'react-bootstrap/Card';
-import {CgWebsite} from 'react-icons/cg'
-import {FiDatabase} from 'react-icons/fi'
 import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
-import{AiOutlineCheck, AiOutlineConsoleSql, AiFillHtml5, AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
-import {BiHappyBeaming, HiOutlineEmojiHappy, RiComputerFill, SiCss3} from 'react-icons/all'
+import{AiOutlineConsoleSql, AiFillGithub, AiFillGitlab, AiFillHtml5, AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
+import {BiHappyBeaming, HiOutlineEmojiHappy, FaSourcetree, SiCss3} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
 
@@ -17,6 +15,7 @@ const Expertise = () => {
     const [inDBHover, setDBHover] = useState(false);
     const [inTestHover, setTestHover] = useState(false);
     const [inOSHover, setOSHover] = useState(false);
+    const [inVCHover, setVCHover] = useState(false);
 
     return (
         <section id="expertise">
@@ -201,7 +200,42 @@ const Expertise = () => {
                                             <li><h3>Windows 7{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Windows 10{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Android{'   '}<BiHappyBeaming size={25}/></h3></li>
-                                            <li><h3>macOS{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>MacOS{'   '}<BiHappyBeaming size={25}/></h3></li>
+                                        </ul>       
+                                        </Fade>   
+                                        }
+                                    </div>
+                               </Link>
+                            </Card.Text> 
+                        </Card.Body>
+                    </Card>
+                </div> 
+                <div className="vc-expertise" id="vc-expertise"> 
+                    <Card 
+                     onMouseEnter={() => setVCHover(true)}
+                     onMouseLeave={() => setVCHover(false)}
+                        >
+                        <Card.Body>
+                            <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
+                                <Card.Title className="vc-expertise-title"> Version Control</Card.Title>
+                            </Link>
+                            <Card.Subtitle>
+                                <FaSourcetree size={40} color={'#f49ac2'} className={inVCHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
+                                <AiFillGithub size={40} color={'#f49ac2'} className={inVCHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
+                                <AiFillGitlab size={40} color={'#f49ac2'} className={inVCHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
+                            </Card.Subtitle>
+                            <Card.Text>
+                               <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
+                                <div className="vc-expertise-content" >
+                                    {inVCHover && 
+                                    <Fade clear>
+                                        <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
+                                            <li><h3>Sourcetree (Git GUI){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>Github{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>Gitlab{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   
                                         }
