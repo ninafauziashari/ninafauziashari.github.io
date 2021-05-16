@@ -178,7 +178,7 @@
   transition: 850ms; 
 }
 
-.web-dev-expertise, .db-expertise, .testing-expertise, .programming-expertise, .os-expertise{
+.web-dev-expertise, .db-expertise, .testing-expertise, .programming-expertise, .os-expertise, .vc-expertise{
   position: relative;
   flex-wrap: wrap;
   width: 18rem;
@@ -193,7 +193,7 @@
 }
 
 
-.web-dev-expertise-title, .db-expertise-title, .testing-expertise-title, .programming-expertise-title, .os-expertise-title{
+.web-dev-expertise-title, .db-expertise-title, .testing-expertise-title, .programming-expertise-title, .os-expertise-title, .vc-expertise-title{
   font-size:35px;
   font-weight: bolder;
   font-family:'contentFont';
@@ -201,7 +201,7 @@
 }
 
 
-.web-dev-expertise-content, .db-expertise-content, .testing-expertise-content, .programming-expertise-content, .os-expertise-content{
+.web-dev-expertise-content, .db-expertise-content, .testing-expertise-content, .programming-expertise-content, .os-expertise-content, .vc-expertise-content{
   background-color: pink;
   border-radius: 5px;
   margin-top:9px;
@@ -936,6 +936,7 @@ span {
     justify-content: flex-end;
     margin-right: 20px;
     padding-right: 30px;
+    color:rgb(99, 98, 98);
   }
 
   .work-exp-title{
