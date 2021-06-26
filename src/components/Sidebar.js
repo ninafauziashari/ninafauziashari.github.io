@@ -16,6 +16,7 @@ const Sidebar = ({}) => {
               <Link to='#' className='menu-bars-open' style={{cursor:"pointer"}}>
                   <FaHamburger onClick={showSidebar} size={35} color="#f4c430"/>
               </Link>
+              
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'} onClick={showSidebar}  size={35} color="white">
                 <ul className='nav-menu-items' >

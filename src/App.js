@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import resumeData from './resumeData'
 import Sidebar from './components/Sidebar'
 import Contact from './components/Contact'
+import Challenge from './components/Challenge'
 import Fade from 'react-reveal/Fade'
 
 import './App.css';
@@ -36,6 +37,7 @@ class App extends Component{
                 <Expertise resumeData={resumeData}/>
                 <Resume resumeData={resumeData}/>
                 <Project resumeData={resumeData}/>
+                {/* <Challenge resumeData={resumeData}/> */}
                 <Contact resumeDate={resumeData}/>
                 <Footer resumeData={resumeData}/> 
             </div>

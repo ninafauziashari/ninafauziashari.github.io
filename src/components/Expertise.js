@@ -5,7 +5,7 @@ import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
 import{AiOutlineConsoleSql, AiFillGithub, AiFillGitlab, AiFillHtml5, AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
-import {BiHappyBeaming, HiOutlineEmojiHappy, FaSourcetree, SiCss3} from 'react-icons/all'
+import {BiHappyBeaming, HiOutlineEmojiHappy, FaSourcetree, SiCss3, SiRedux} from 'react-icons/all'
 import { Link } from 'react-scroll'
 
 
@@ -53,7 +53,7 @@ const Expertise = () => {
                                 &nbsp; &nbsp;
                                 <AiFillHtml5 size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
-                                <SiCss3 size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                <SiRedux  size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
@@ -67,6 +67,7 @@ const Expertise = () => {
                                             <li><h3>React Native{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>React.js{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Node.js (+ Express.js){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>Redux{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   
                                         }
@@ -233,8 +234,8 @@ const Expertise = () => {
                                     {inVCHover && 
                                     <Fade clear>
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start"}}>
-                                            <li><h3>Sourcetree (Git GUI){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
-                                            <li><h3>Github{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+                                            <li><h3>Sourcetree (Git GUI){'   '}<BiHappyBeaming size={25}/></h3></li>
+                                            <li><h3>Git Command{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>Gitlab{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                         </ul>       
                                         </Fade>   

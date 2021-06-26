@@ -13,7 +13,7 @@ import FileSaver from 'file-saver';
 const Resume = () =>{
     const saveFile = () =>{
         FileSaver.saveAs(
-            process.env.PUBLIC_URL + "/resource/nina-resume.docx", "Nina's Resume.docx"
+            process.env.PUBLIC_URL + "/resource/nina-resume-UK.docx", "Nina's Resume.docx"
         );
     }
     /*let resumeData = this.props.resumeData;*/

@@ -28,7 +28,7 @@ let resumeData = {
     [
         {
         "university":"University of Nothampton",
-        "grade" : "First Class (expected)",
+        "grade" : "Distinction",
         "degree":"MSc Computing (Software Engineering)",
         "modules": 
                 [{
@@ -128,7 +128,7 @@ let resumeData = {
     "work":
     [
         {
-            "position": "Junior Full Stack Developer",
+            "position": "Junior Frontend Developer",
             "companyName":"OnCloud Technologies Sdn Bhd",
             "location":"Kuala Lumpur, Malaysia",
             "startDate":"March 2021",
@@ -137,19 +137,18 @@ let resumeData = {
             "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Responsibilities include:",
             "responsibilities":
                 [{
-                    "one": "<TBA>",
-                    "two": "<TBA>",
-                    "three": "<TBA>",
-                    "four" : "<TBA>",
-                    "five" : "<TBA>",
-                    "six" : "<TBA>"
+                    "one": "Debugging and enhance mobile application features using React Native and Redux ",
+                    "two": "Maintaining multiple applications running on single codebase (Example applications worked on include Yin Ker Lou and Union Experience)",
+                    "three": "Report issues found in YouTrack in a systematic manner.",
+                    "four" : "Commit code changes to Gitlab via Sourcetree (Git GUI)",
+                    "five" : "Promote mobile application from development to staging and production using TestFlight (iOS) and Google Play Console (Android) via Expo SDK",
                 }],
             "intro_learn":"Through my experiences in this company, I have learned to:",
             "learned":
                 [{
-                    "l1":"<TBA>",
-                    "l2":"<TBA>",
-                    "l3":"<TBA>"
+                    "l1":"Enhanced my knowledge in the usage of Git branching.",
+                    "l2":"Increased my knowledge in debugging issues.",
+                    "l3":"Experienced version controlling using git command (in order to promote mobile application to TestFlight or Google Play Console)"
                 }]
         }, 
         {

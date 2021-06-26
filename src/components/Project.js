@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {AiFillPlusSquare, AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
+import fyp from '../images/fyp/1.png'
+import fyp2 from '../images/fyp/2.png'
 import { Link } from 'react-scroll'
 
 
@@ -81,7 +83,11 @@ const Project = () => {
                                             <p>Grade: {resumeData.mastersGrade}</p>
                                             <p>Source code available at <a href="https://github.com/ninafauziashari/mastersdissertation">Github</a></p>
                                         </Fade> 
+                                        {/* <Fade right>
+                                            <img src={fyp} alt="Test" width={200}/>
+                                        </Fade> */}
                                     </div>
+                                    
                                 </div>
                             }
                             </div>

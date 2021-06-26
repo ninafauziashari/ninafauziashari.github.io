@@ -22,9 +22,10 @@ render() {
                             Experienced Software Tester
                         </h1>
                         </Fade>
-                    
+                        {/* <iframe src="https://open.spotify.com/embed/playlist/0hpVq3KnSXEryOuRrnC03B" 
+                            style={{borderRadius:4, paddingBottom:15}} width="70%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
                 </div>
-                
+               
             </div>
         </section>
     );
