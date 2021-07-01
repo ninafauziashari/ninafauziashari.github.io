@@ -128,13 +128,13 @@ let resumeData = {
     "work":
     [
         {
-            "position": "Junior Frontend Developer",
+            "position": "Junior Fullstack Developer",
             "companyName":"OnCloud Technologies Sdn Bhd",
             "location":"Kuala Lumpur, Malaysia",
             "startDate":"March 2021",
             "endDate":"Present",
             "workDesc": "",
-            "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Responsibilities include:",
+            "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Company works in Agile environment. Responsibilities include:",
             "responsibilities":
                 [{
                     "one": "Debugging and enhance mobile application features using React Native and Redux ",
@@ -142,6 +142,7 @@ let resumeData = {
                     "three": "Report issues found in YouTrack in a systematic manner.",
                     "four" : "Commit code changes to Gitlab via Sourcetree (Git GUI)",
                     "five" : "Promote mobile application from development to staging and production using TestFlight (iOS) and Google Play Console (Android) via Expo SDK",
+                    "six" : "Testing the mobile application."
                 }],
             "intro_learn":"Through my experiences in this company, I have learned to:",
             "learned":
@@ -158,7 +159,7 @@ let resumeData = {
         "startDate":"July 2017",
         "endDate":"August 2018",
         "workDesc": "",
-        "intro":"Based in Chesterfield UK, this is a part of my university’s Year 3 Work Placement. Responsibilities include:",
+        "intro":"Based in Chesterfield UK, this is a part of my university’s Year 3 Work Placement. The team works in agile environment. Responsibilities include:",
         "responsibilities":
             [{
                 "one": "Writing test scripts, test cases and test plans for a software using Excel. ",

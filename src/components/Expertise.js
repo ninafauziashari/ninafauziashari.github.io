@@ -124,7 +124,11 @@ const Expertise = () => {
                                <Fade clear>
                                    <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start" }}>
                                        <li><h3>Postman (API Testing){'   '}<BiHappyBeaming size={25}/></h3></li>
-                                       <li><h3>Manual Testing {'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Writing Test Cases {'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Writing Test Plans {'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Black Box Testing {'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Functional Testing {'   '}<BiHappyBeaming size={25}/></h3></li>
+                                       <li><h3>Acceptance Testing {'   '}<BiHappyBeaming size={25}/></h3></li>
                                        <li><h3>Selenium (Automation){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                        <li><h3>Gherkin (BDD Testing) {'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                        
