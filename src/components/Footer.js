@@ -9,7 +9,7 @@ render() {
         <section id="footer">
             <div className="row">
                 <div className="footer">
-                            <p>For my Puddin'...cuz he buys me food hehe</p>
+                            <p>"I never look back, darling, it distracts from the now," - Edna Mode</p>
                     <div className="row" style={{fontFamily:'bodyFont', fontSize:"15px"}}>
                         <p class="text-center text-muted">© Copyright 2021 Nina's Portfolio</p>
                         
