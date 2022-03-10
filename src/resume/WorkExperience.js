@@ -19,9 +19,6 @@ const WorkExperience = ({}) => {
             <div>
                 <div className="work-experience">
                     <MdWork size={30}/>
-                    &nbsp;&nbsp;&nbsp;
-                    <h2>Work Experience</h2>
-                    &nbsp; &nbsp;
                     <div className="scroll-down-resume">
                     <Link to="work-experience" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
                         {
@@ -64,15 +61,10 @@ const WorkExperience = ({}) => {
                                                             <h4>{item.intro}</h4> 
                                                             <div style={{textAlign:"justify"}}>
                                                             {
-                                                             item.responsibilities.map((itemOne)=>{
+                                                             item.responsibilities.map((item)=>{
                                                                 return(
                                                                     <ul>
-                                                                       <li>{itemOne.one}</li>
-                                                                       <li>{itemOne.two}</li>
-                                                                       <li>{itemOne.three}</li>
-                                                                       <li>{itemOne.four}</li>
-                                                                       <li>{itemOne.five}</li>
-                                                                       <li>{itemOne.six}</li>
+                                                                       <li>{item.r}</li>
                                                                    </ul>                                                                   
                                                                  )
                                                                 })
@@ -82,13 +74,10 @@ const WorkExperience = ({}) => {
                                                              <h4>{item.intro_learn}</h4>
                                                              <div style={{textAlign:"justify"}}>
                                                              {/*Surely there's a way to loop this :pp */
-                                                             item.learned.map((itemOne)=>{
+                                                             item.learned.map((item)=>{
                                                                 return(
                                                                     <ul>
-                                                                       <li>{itemOne.l1}</li>
-                                                                       <li>{itemOne.l2}</li>
-                                                                       <li>{itemOne.l3}</li>
-                                                                       
+                                                                       <li>{item.l}</li>  
                                                                    </ul>
                                                                     
                                                                 )

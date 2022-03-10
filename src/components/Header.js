@@ -6,18 +6,20 @@ import resumeData from '../resumeData';
 const Header = ()=>{
     return (
         <Fragment>
-            <header id="home" className="app-header">
+            <header id="/" className="app-header" duration={1400}>
                 <div>
-                    <Fade bottom>
-                        <div className="app-header-title">
-                            <h1 style={{marginBottom:"0px"}}>Hi, you can call me {resumeData.shortName}...</h1>
-                            <Link activeClass="active" to="about" spy={true} smooth={true} duration={1400}>
+                    <div className="app-header-title">
+                        <Fade bottom duration={2000}>
+                        <h1 style={{marginBottom:"10px", justifyContent:'center', alignItems:'center'}}>Hi, you can call me {resumeData.shortName}...</h1>
+                        </Fade>
+                        <Link activeClass="active" to="/about" spy={true} smooth={true} duration={1400}>
+                            <Fade duration={8000}>
                                 <button className="app-header-button">
                                     AND I'M A...
                                 </button>
-                            </Link>
-                        </div>
-                    </Fade>
+                            </Fade>
+                        </Link>
+                    </div>
                 </div>  
             </header>
         </Fragment>

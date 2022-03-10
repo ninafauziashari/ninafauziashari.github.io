@@ -1,7 +1,7 @@
 let resumeData = {
     "fullName":"Nurul Amanina binti Ahmad Fauzi",
     "shortName":"Nina",
-    "age":"25",
+    "age":"26",
     "firstName": "Nurul Amanina",
     "lastName": "Ahmad Fauzi",
     "address": "142 Adnitt Road, Northampton NN1 4NL, Northamptonshire",
@@ -128,29 +128,70 @@ let resumeData = {
     "work":
     [
         {
+            "position": "Software Developer",
+            "companyName":"Evo Tracker Sdn Bhd",
+            "location":"Kuala Lumpur, Malaysia",
+            "startDate":"February 2022",
+            "endDate":"Present",
+            "workDesc": "",
+            "intro":"Based in Kuala Lumpur. Responsibilities include:",
+            "responsibilities":
+                [
+                    {
+                        "r": "Maintaining a web portal for merchants and administrators (using Vue.js) and mobile application for end users (using React Native) along with the backend services (Laravel PHP). ",
+                    },
+                    {
+                        "r": "Mobile applications currently working on includes Lapar, Lapar Rider and Lapar Vendor",
+                    }
+                ],
+            "intro_learn":"Through my experiences in this company, I have learned to:",
+            "learned":
+                []
+        }, 
+        {
             "position": "Junior Fullstack Developer",
             "companyName":"OnCloud Technologies Sdn Bhd",
             "location":"Kuala Lumpur, Malaysia",
             "startDate":"March 2021",
-            "endDate":"Present",
+            "endDate":"January 2022",
             "workDesc": "",
             "intro":"Based in Damansara Heights, Kuala Lumpur, this is a junior position. Company works in Agile environment. Responsibilities include:",
             "responsibilities":
-                [{
-                    "one": "Debugging and enhance mobile application features using React Native and Redux ",
-                    "two": "Maintaining multiple applications running on single codebase (Example applications worked on include Yin Ker Lou and Union Experience)",
-                    "three": "Report issues found in YouTrack in a systematic manner.",
-                    "four" : "Commit code changes to Gitlab via Sourcetree (Git GUI)",
-                    "five" : "Promote mobile application from development to staging and production using TestFlight (iOS) and Google Play Console (Android) via Expo SDK",
-                    "six" : "Testing the mobile application."
-                }],
+                [
+                    {
+                        "r": "Maintaining multiple applications running on single codebase using Expo’s React Native and Redux (Example applications worked on include The Barn, Ying Ker Lou and Yakiniku YUI) (Available on App Store and Google Play Store)",
+                    },
+                    {
+                        "r": "Building reusable components and front-end libraries for future use.",
+                    },
+                    {
+                        "r": "Using Expo framework to develop and debug the mobile application, Build .ipa and .apk file (which is later transported to either Test Flight or Google Play Console for Internal Testing, and later released to production), publish OTA updates and maintain customized app configuration file and versioning for each mobile application."
+
+                    },
+                    {
+                        "r" : "Designing and developing various components such as map view, text input that recommends monetary value upon tap, pagination for a screen and screen to modify or add user’s address.",
+                    },
+                    {
+                        "r" : "API Testing using Postman application.",
+                    },
+                    {
+                        "r" : "Third-party software worked on includes: Firebase (for Dynamic Link), Facebook For Developers (for Login via Facebook), App Store Connect (to set up app for iOS and push to production) and Google Play Console (to set up app Android and push to production)"
+                    } 
+                ],
             "intro_learn":"Through my experiences in this company, I have learned to:",
             "learned":
-                [{
-                    "l1":"Enhanced my knowledge in the usage of Git branching.",
-                    "l2":"Increased my knowledge in debugging issues.",
-                    "l3":"Experienced version controlling using git command (in order to promote mobile application to TestFlight or Google Play Console)"
-                }]
+                [
+                    {
+                        "l":"Enhanced my knowledge in the usage of Git branching."
+                    },
+                    {
+                        "l":"Increased my knowledge in debugging issues.",
+                    },
+                    {
+                         
+                        "l":"Experienced version controlling using git command (in order to promote mobile application to TestFlight or Google Play Console) and push them to production"
+                    }
+                ]
         }, 
         {
         "position": "Quality Assurance Intern",
@@ -161,21 +202,39 @@ let resumeData = {
         "workDesc": "",
         "intro":"Based in Chesterfield UK, this is a part of my university’s Year 3 Work Placement. The team works in agile environment. Responsibilities include:",
         "responsibilities":
-            [{
-                "one": "Writing test scripts, test cases and test plans for a software using Excel. ",
-                "two": "Running multiples types of tests such as regression testing, functional testing and acceptance testing.",
-                "three": "Additional types of tests conducted include performance testing and security testing.",
-                "four" : "Writing bug reports using Microsoft TFS and later, sending them to programmers for further inspection (sometimes, telling them face-to-face).",
-                "five" : "Programming SQL for testing purposes (e.g: searching if any new information appears in the database).",
-                "six" : "Software worked on included: SOP2, SAP, and Vicsys"
-            }],
+            [
+                {
+                    "r": "Writing test scripts, test cases and test plans for a software using Excel. ",
+                },
+                {
+                    "r": "Running multiples types of tests such as regression testing, functional testing and acceptance testing.",
+                },
+                {
+                    "r": "Additional types of tests conducted include performance testing and security testing.",
+                },
+                {
+                    "r" : "Writing bug reports using Microsoft TFS and later, sending them to programmers for further inspection (sometimes, telling them face-to-face).",
+                },
+                {
+                    "r" : "Programming SQL for testing purposes (e.g: searching if any new information appears in the database).",
+                },
+                {
+                    "r" : "Software worked on included: SOP2, SAP, and Vicsys"
+                }
+            ],
         "intro_learn":"Through my experiences in this company, I have learned to:",
         "learned":
-            [{
-                "l1":"Prioritize my work and learned to use my time well so that my deadlines are met. ",
-                "l2":"Increase my confidence in speaking (e.g: lead a meeting when IT Manager is not present)",
-                "l3":"Become comfortable with excessive work amount and working under pressure. "
-            }]
+            [
+                {
+                    "l":"Prioritize my work and learned to use my time well so that my deadlines are met. ",
+                },
+                {
+                    "l":"Increase my confidence in speaking (e.g: lead a meeting when IT Manager is not present)",
+                },
+                {
+                    "l":"Become comfortable with excessive work amount and working under pressure. "
+                }
+            ]
     }],
 
     "references":

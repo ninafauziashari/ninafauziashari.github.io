@@ -47,9 +47,11 @@
   src: url(./fonts/contentFont.ttf);
 }
 
+
 .app-header {
   height:100%;
   background-image: url("./images/bground.jpg");
+  /* background: rgb(0,0,0); */
   background-position:bottom;
   background-attachment:fixed;
   background-size: cover;
@@ -61,13 +63,35 @@
   /*padding-bottom: 160px;*/
   padding: 0 0 35%;
   padding-top: 50px;
+  -webkit-background-size: myfirst 3s;
+  -moz-background-size: myfirst 3s;
+  -o-background-size: myfirst 3s;
+  background-size: myfirst 3s;
+  -webkit-animation: myfirst 3s ; /* Chrome, Safari, Opera */
+  animation: myfirst 3s ;
+  
 }
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    0% {
+      opacity:0.0;
+    }
+    50% {
+      opacity:0.5;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
 .app-header-title{
   font-family:'headerFont';
   font-size:calc(50px + 1vmin);
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-header-button{
@@ -115,12 +139,32 @@
 }
 
 .about-me-content{
-  font-size:45px;
+  font-size:50px;
   padding-top:2px;
   padding:80px;
   letter-spacing: 2.0px;
   transition: 1000ms;
 }
+
+#testimony{
+  background-color: #FFFAFA;
+}
+
+.testimony-title{
+  background-color: #FFFAFA;
+  font-family: 'headerFont';
+  margin-bottom: -50px;
+  color: black;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  letter-spacing: 1.5px;
+  padding: 2px;
+  flex-wrap:wrap;
+}
+
 
 .expertise{
   background-color: white;
@@ -257,17 +301,20 @@
 }
 
 .resume-logo, .project-logo, .resume-logo-click, .project-logo-click {
+  display: flex;
   animation: resume-logo-spin-close  0.5s linear;
   background-color: rgb(245, 233, 68);
   cursor: pointer;
   justify-content: center;
+  align-self: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .project-logo, .project-logo-click{
   background-color: white;
   color:#afa2ab ;
 }
-
 
 .expertise-logo{
   animation: unset
@@ -391,7 +438,6 @@
   justify-content: flex-end;
   margin-right: 10px;
   cursor: pointer;
-  margin-top:0px;
 }
 
 
@@ -401,7 +447,7 @@
   /*min-height: 90vh;*/
   display: flex;
   flex:1;
-  font-size:calc(17px + 0.5vmin);
+  border-radius: 20px;
   font-family: 'contentFont';
   flex-direction: row;
   align-items:center;
@@ -414,7 +460,7 @@
   margin-bottom:8px;
   background-color: #fffe7a;
   transition: 850ms;
-  height: 60px;
+  height: 43px;
 }
 
 .education-content, .work-experience-content, .interests-content, .biodata-content{ 
@@ -877,16 +923,19 @@ span {
   }
 
   .project-title-1, .project-title-2{
+    display: flex;
     align-items:center;
     flex:1;
     flex-direction: row;
-    display: flex;
     flex-wrap: wrap;
     background-color: #E6DECC;
     justify-content: center;
     margin: 10px;
+    border-radius: 20px;
     margin-bottom: -5px;
-    padding:0px 10px 0px 10px;
+    padding:15px;
+    padding-bottom:5px;
+    padding-top:5px;
   }
 
   /*.education, .work-experience, .interests, .biodata{
@@ -1106,6 +1155,21 @@ span {
   label {
     padding: 20px 0px 5px 2px;
     display: inline-block;
+  }
+
+  .testimonies{
+    position: relative;
+    flex-wrap: wrap;
+    width: 18rem;
+    padding-top: 2px;
+    padding:25px;
+    margin: 20px;
+    /*padding-bottom:30px;
+    margin-top: -20px;*/
+    background:linear-gradient(rgba(250,0,0,0.5),transparent);
+    background-color: #ffd1df;
+    justify-content: center;
+    align-items: center;
   }
 
 
