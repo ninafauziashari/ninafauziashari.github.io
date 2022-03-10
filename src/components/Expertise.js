@@ -5,7 +5,11 @@ import {SiNeo4J, SiMongodb, SiPostman, SiExpo} from 'react-icons/si'
 import {FaReact, FaJava, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1} from 'react-icons/di'
 import{AiOutlineConsoleSql, AiFillGithub, AiFillGitlab, AiFillHtml5, AiFillWindows, AiFillAndroid, AiFillApple} from 'react-icons/ai'
+<<<<<<< HEAD
 import {BiHappyBeaming, HiOutlineEmojiHappy, FaSourcetree, SiCss3, SiRedux} from 'react-icons/all'
+=======
+import {IoLogoVue,BiHappyBeaming, HiOutlineEmojiHappy, FaSourcetree, SiCss3, SiRedux} from 'react-icons/all'
+>>>>>>> main
 import { Link } from 'react-scroll'
 
 
@@ -51,16 +55,26 @@ const Expertise = () => {
                                 &nbsp; &nbsp;
                                 <FaNodeJs size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
+<<<<<<< HEAD
                                 <AiFillHtml5 size={40} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
                                 &nbsp; &nbsp;
                                 <SiRedux  size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+=======
+                                <SiRedux  size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+                                &nbsp; &nbsp;
+                                <IoLogoVue  size={35} color={'#f49ac2'} className={inWebDevHover ? 'expertise-logo-hover ': 'expertise-logo'}/>
+>>>>>>> main
                             </Card.Subtitle>
                             <Card.Text>
                                <Link to="dev-card-content" activeClass="active" spy={true} smooth={true} duration={1250}>
                                 <div className="web-dev-expertise-content" >
                                     {inWebDevHover && 
                                     <Fade clear>
+<<<<<<< HEAD
                                         <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start", alignContent:"center"}}>
+=======
+                                        <ul className="card-text" style={{marginLeft:"2rem", textAlign:"justify", justifyContent:"flex-start", alignContent:"center", alignItems:'center'}}>
+>>>>>>> main
                                             <li><h3>JavaScript{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>HTML5{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>CSS3{'   '}<BiHappyBeaming size={25}/></h3></li>
@@ -68,6 +82,10 @@ const Expertise = () => {
                                             <li><h3>React.js{'   '}<BiHappyBeaming size={25}/></h3></li>
                                             <li><h3>Node.js (+ Express.js){'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
                                             <li><h3>Redux{'   '}<HiOutlineEmojiHappy size={25}/></h3></li>
+<<<<<<< HEAD
+=======
+                                            <li><h3>Vue.js{'   '}<BiHappyBeaming size={25}/></h3></li>
+>>>>>>> main
                                         </ul>       
                                         </Fade>   
                                         }

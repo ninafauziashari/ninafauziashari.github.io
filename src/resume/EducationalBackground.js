@@ -25,9 +25,13 @@ const EducationalBackground = ({}) => {
             <div>
                 <div className="education">
                     <IoSchoolOutline size={30}/>
+<<<<<<< HEAD
                     &nbsp;&nbsp;&nbsp;
                     <h2>Educational Background</h2>
                     &nbsp; &nbsp;
+=======
+                   
+>>>>>>> main
                     <div className="scroll-down-resume">
                     <Link to="education" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen} >
                         {

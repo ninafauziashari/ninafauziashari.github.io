@@ -3,8 +3,8 @@ import resumeData from '../resumeData';
 import Card from 'react-bootstrap/Card';
 import {AiOutlinePlus, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
 import {ImBooks} from 'react-icons/im'
-import {IoBookSharp, SiCoffeescript, FiMusic, FaHiking, FaMountain} from 'react-icons/all'
-import {GiBookmarklet, GiDoubleDragon, GiCrossedSwords, GiTrail} from 'react-icons/gi'
+import {IoBookSharp, FiMusic, FaHiking, FaMountain} from 'react-icons/all'
+import {GiBookmarklet, GiCrossedSwords, GiTrail, GiCoffeeCup, GiSpikedDragonHead} from 'react-icons/gi'
 import {MdComputer} from 'react-icons/md'
 import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
@@ -25,9 +25,6 @@ const Interests = ({}) => {
             <div>
                 <div className="interests">
                     <ImBooks size={30}/>
-                    &nbsp;&nbsp;&nbsp;
-                    <h2>Interests | Hobby</h2>
-                    &nbsp; &nbsp;
                     <div className="scroll-down-resume">
                     <Link to="interests" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
                         {
@@ -59,13 +56,13 @@ const Interests = ({}) => {
                                                 &nbsp;&nbsp;&nbsp;
                                                 <AiOutlinePlus size={30} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
-                                                < GiDoubleDragon size={100} color="white"/>
+                                                < GiSpikedDragonHead size={100} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
                                                 < GiCrossedSwords size={100} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
                                                 <AiOutlinePlus size={30} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
-                                                <SiCoffeescript size={90} color="white"/>
+                                                <GiCoffeeCup size={90} color="white"/>
                                                     {
                                                         isReadingHover && 
                                                         <Fade clear>
@@ -111,7 +108,7 @@ const Interests = ({}) => {
                                                 &nbsp;&nbsp;&nbsp;
                                                 <AiOutlinePlus size={30} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
-                                                <SiCoffeescript size={90} color="white"/>
+                                                <GiCoffeeCup size={90} color="white"/>
                                                 &nbsp;&nbsp;&nbsp;
                                                 <AiOutlinePlus size={30} color="white"/>
                                                 <FiMusic size={100} color="white"/>

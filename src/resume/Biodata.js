@@ -1,6 +1,7 @@
 import React, {useState, Component} from 'react';
 import resumeData from '../resumeData';
 import { AiOutlinePlus, AiOutlineHome, AiFillCloseCircle, AiOutlineMinus} from 'react-icons/ai'
+import {GrUserFemale} from 'react-icons/gr'
 import {BsFillPlusCircleFill} from 'react-icons/bs'
 import {FaCat, FaBabyCarriage} from 'react-icons/fa'
 import {FiMoon} from 'react-icons/fi'
@@ -20,10 +21,8 @@ const Biodata = ({}) => {
         <section id="biodata">
             <div>
                 <div className="biodata">
-                    <FaCat size={30}/>
-                    &nbsp;&nbsp;&nbsp;
-                    <h2>Biodata</h2>
-                    &nbsp; &nbsp;
+                    <GrUserFemale size={30}/>
+                  
                     <div className="scroll-down-resume" >
                     <Link to="resume-content" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
                         {

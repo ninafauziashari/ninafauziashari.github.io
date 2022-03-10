@@ -11,6 +11,11 @@ import Footer from './components/Footer'
 import resumeData from './resumeData'
 import Sidebar from './components/Sidebar'
 import Contact from './components/Contact'
+<<<<<<< HEAD
+=======
+import Personality from './components/Personality'
+import Testimony from './components/Testimony'
+>>>>>>> main
 import Challenge from './components/Challenge'
 import Fade from 'react-reveal/Fade'
 
@@ -33,10 +38,19 @@ class App extends Component{
           <div className="App">
             <div>
                 <Header resumeData={resumeData}/>
+<<<<<<< HEAD
                 <AboutMe resumeData={resumeData}/>
                 <Expertise resumeData={resumeData}/>
                 <Resume resumeData={resumeData}/>
                 <Project resumeData={resumeData}/>
+=======
+                <Route to ="/about" component={AboutMe} resumeData={resumeData}/>
+                <Expertise resumeData={resumeData}/>
+                <Resume resumeData={resumeData}/>
+                <Project resumeData={resumeData}/>
+                <Personality resumeData={resumeData}/>
+                <Testimony resumeData={resumeData}/>
+>>>>>>> main
                 {/* <Challenge resumeData={resumeData}/> */}
                 <Contact resumeDate={resumeData}/>
                 <Footer resumeData={resumeData}/> 

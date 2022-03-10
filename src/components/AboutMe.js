@@ -1,34 +1,48 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade'
 
-export default class AboutMe extends Component {
-render() {
-    let resumeData = this.props.resumeData;
+const AboutMe =() => {
+// render() {
+    //let resumeData = this.props.resumeData;
     
     return (
-        <section id="about">
+        <section id="/about">
             <div className="row">
                 <div className="about-me" style={{padding:"2px"}}>
                         {/*<div>
                             <img src={profilePic} width="350" height="480" style={{borderRadius:200, justifyContent:"left"}}/>
-                            
+                            https://www.pinterest.co.uk/pin/349662358579929201/
                         </div>*/ }
-                         <Fade bottom>
-                        <h1 className="about-me-content">
-                            Masters in Software Engineering graduate
-                            <br></br>
-                            An aspiring Full Stack Web Developer
-                            <br></br>
-                            Experienced Software Tester
-                        </h1>
-                        </Fade>
+                        
+                        <div className="about-me-content">
+                            <Fade duration={3000}>
+                                <h1 style={{padding:"30px"}}>
+                                    Masters in Software Engineering holder
+                                </h1>
+                            </Fade>
+                            <Fade duration={5000}>
+                                <h1  style={{padding:"30px"}}> 
+                                    An aspiring Web Developer
+                                </h1 >
+                            </Fade>
+                            <Fade duration={7000}>
+                                <h1  style={{padding:"30px"}}> 
+                                    An experienced Software Tester
+                                </h1 >
+                            </Fade>
+                            <Fade duration={9000}>
+                                <h1  style={{padding:"30px"}}>
+                                    A firm believer of 'Carpe Diem'
+                                </h1 >
+                            </Fade>
+                        </div>
                         {/* <iframe src="https://open.spotify.com/embed/playlist/0hpVq3KnSXEryOuRrnC03B" 
                             style={{borderRadius:4, paddingBottom:15}} width="70%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
                 </div>
-               
             </div>
         </section>
     );
+// }
 }
-}
+export default AboutMe
 
