@@ -26,12 +26,6 @@ const References = ({}) => {
             <div>
                 <div className="reference">
                     <BsPeopleFill size={30}/>
-<<<<<<< HEAD
-                    &nbsp;&nbsp;&nbsp;
-                    <h2>References</h2>
-                    &nbsp; &nbsp;
-=======
->>>>>>> main
                     <div className="scroll-down-resume">
                     <Link to="reference" activeClass="active" spy={true} smooth={true} duration={1200} onClick={showOpen}>
                     {

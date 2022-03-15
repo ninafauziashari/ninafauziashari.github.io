@@ -226,7 +226,7 @@ let resumeData = {
         "learned":
             [
                 {
-                    "l":"Prioritize my work and learned to use my time well so that my deadlines are met. ",
+                    "l":"Prioritizle my work and learned to use my time well so that my deadlines are met. ",
                 },
                 {
                     "l":"Increase my confidence in speaking (e.g: lead a meeting when IT Manager is not present)",
