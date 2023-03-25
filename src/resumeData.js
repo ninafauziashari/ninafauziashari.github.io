@@ -1,7 +1,7 @@
 let resumeData = {
     "fullName":"Nurul Amanina binti Ahmad Fauzi",
     "shortName":"Nina",
-    "age":"26",
+    "age":"27",
     "firstName": "Nurul Amanina",
     "lastName": "Ahmad Fauzi",
     "address": "142 Adnitt Road, Northampton NN1 4NL, Northamptonshire",
@@ -132,7 +132,7 @@ let resumeData = {
             "companyName":"Evo Tracker Sdn Bhd",
             "location":"Kuala Lumpur, Malaysia",
             "startDate":"February 2022",
-            "endDate":"Present",
+            "endDate":"March 2022 (retrenched)",
             "workDesc": "",
             "intro":"Based in Kuala Lumpur. Responsibilities include:",
             "responsibilities":
