@@ -4,9 +4,9 @@ let resumeData = {
     "age":"27",
     "firstName": "Nurul Amanina",
     "lastName": "Ahmad Fauzi",
-    "address": "142 Adnitt Road, Northampton NN1 4NL, Northamptonshire",
+    "address": "No. 24, Jalan SS19/5F 47500, Subang Jaya, Selangor",
     "email": "ninafauziashari@hotmail.com",
-    "contactNo": "+44 7456628286",
+    "contactNo": "+60183597640",
     "role": "Software Engineer",
     "linkedinId":"https://www.linkedin.com/in/nurul-ahmad-fauzi-74004b134/",
     "socialLinks":[
