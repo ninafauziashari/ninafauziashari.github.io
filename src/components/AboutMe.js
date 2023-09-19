@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade'
 
-const AboutMe =() => {
-// render() {
-    //let resumeData = this.props.resumeData;
-    
+const AboutMe =() => {    
     return (
         <section id="/about">
             <div className="row">
@@ -28,11 +25,6 @@ const AboutMe =() => {
                             <Fade duration={7000}>
                                 <h1  style={{padding:"30px"}}> 
                                     An experienced Software Tester
-                                </h1 >
-                            </Fade>
-                            <Fade duration={9000}>
-                                <h1  style={{padding:"30px"}}>
-                                    A firm believer of 'Carpe Diem'
                                 </h1 >
                             </Fade>
                         </div>
